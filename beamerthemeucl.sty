@@ -83,8 +83,48 @@
   \end{beamercolorbox}%
   \ifbeamercolorempty[bg]{banner stripe}{}{\vspace{\stripeheight}}%
 }
+
+
+\ifbeamer@compress
+
+\defbeamertemplate*{headline}{split theme}
+{%
+  \leavevmode%
+  \begin{beamercolorbox}[ignorebg,wd=.5\paperwidth,ht=2.5ex,dp=1.125ex]{section in head/foot}%
+    \insertsectionnavigationhorizontal{.5\paperwidth}{\hskip5pt plus1filll}{}%
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.5ex,dp=1.125ex]{my title in head/foot}%
+    \insertsubsectionnavigationhorizontal{.5\paperwidth}{}{\hskip0pt plus1filll}%
+  \end{beamercolorbox}%
+}
+
+\else
+
+\defbeamertemplate*{headline}{split theme}
+{%
+  \leavevmode%
+  \@tempdimb=2.4375ex%
+  \ifnum\beamer@subsectionmax<\beamer@sectionmax%
+    \multiply\@tempdimb by\beamer@sectionmax%
+  \else%
+    \multiply\@tempdimb by\beamer@subsectionmax%
+  \fi%
+  \ifdim\@tempdimb>0pt%
+    \advance\@tempdimb by 1.825ex%
+    \begin{beamercolorbox}[wd=.5\paperwidth,ht=\@tempdimb]{section in head/foot}%
+      \vbox to\@tempdimb{\vfil\insertsectionnavigation{.5\paperwidth}\vfil}%
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.5\paperwidth,ht=\@tempdimb]{subsection in head/foot}%
+      \vbox to\@tempdimb{\vfil\insertsubsectionnavigation{.5\paperwidth}\vfil}%
+    \end{beamercolorbox}%
+  \fi%
+}
+
+\fi
+
 % use boxes instead of circles
-\setbeamertemplate{mini frames}[box]
+% \setbeamertemplate{mini frames}[circle]
+% \setbeamertemplate{mini frames}[box]
 
 % Department and subdepartment/slogan in the headline
 \defbeamertemplate{headline}{department}{%
@@ -124,12 +164,30 @@
   \vskip0pt%
 }
 
+\defbeamertemplate{footline}{author title frame}
+{
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.25ex,dp=1ex,right,rightskip=.5em]{author in head/foot}%
+    \usebeamerfont{author in head/foot}\insertshortauthor
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.25ex,dp=1ex,left,leftskip=0.5em,rightskip=.5em]{my title in head/foot}%
+    \usebeamerfont{my title in head/foot}\insertshorttitle\hfill\insertframenumber
+  \end{beamercolorbox}%
+  % \begin{beamercolorbox}[wd=.0\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+  % \end{beamercolorbox}
+  }%
+  \vskip0pt%
+}
+
 % Slide counter
-\defbeamertemplate*{slide counter}{frametotal}[1][]{%
+\defbeamertemplate*{slide counter}{frametotal}[1][]
+{%
   \usebeamercolor[fg]{date in head/foot}%
   #1~\insertframenumber\ \vrule width0.3pt height5pt\ \inserttotalframenumber%
 }
-\defbeamertemplate{slide counter}{frameonly}[1][]{%
+\defbeamertemplate{slide counter}{frameonly}[1][]
+{%
   \usebeamercolor[fg]{date in head/foot}%
   #1~\insertframenumber%
 }
@@ -137,14 +195,24 @@
 }
 
 % Reduce margins
-\setbeamersize{text margin left=1.4em,text margin right=1.4em}
+% \setbeamersize{text margin left=1.4em,text margin right=1.4em} %"original"
+\setbeamersize{text margin left=2em,text margin right=2em}
 
 % make everything rectangle-y
-\useinnertheme{rectangles}
+% \useinnertheme{rectangles}
+\useinnertheme[shadow=true]{rounded} %activates all round (no need for the lines below)
+
+% \setbeamertemplate{items}[circle]
+% \setbeamertemplate{sections/subsections in toc}[circle]
+
+% \setbeamertemplate{items}[ball]
+% \setbeamertemplate{sections/subsections in toc}[ball]
+% \setbeamertemplate{enumerate items}[default]
+% \setbeamertemplate{navigation symbols}{} %remove navigation symbols
 
 % use the Helvetica font
-\usepackage[scaled]{helvet}
-\usepackage{eulervm}
+% \usepackage[scaled]{helvet}
+% \usepackage{eulervm}
 
 %%% the UCL font is actually Arial, if you want to use it, you should install
 %%% the font using the getnonfreefonts script, then it can be loaded by the
@@ -152,4 +220,8 @@
 % \usepackage[T1]{fontenc}
 % \usepackage{uarial}
 % \renewcommand{\familydefault}{\sfdefault}
+
+% \usefonttheme{default}
+% \usefonttheme{structurebold}
+% \usefonttheme{professionalfonts}
 

@@ -1,6 +1,28 @@
-\documentclass{beamer}
+\documentclass[compress,12pt,handout]{beamer}
 \usetheme{ucl}
 
+
+% Define user colors using the RGB model
+\definecolor{dunkelgrau}{rgb}{0.4,0.4,0.4}
+\definecolor{grau}{rgb}{0.6,0.6,0.6}
+\definecolor{hellgrau}{rgb}{0.95,0.95,0.95}
+
+% \definecolor{headlinecolor}{RGB}{130,0,0}
+% \colorlet{headlinecolor}{pink}
+\colorlet{headlinecolor}{brightblue}
+
+\definecolor{orange}{RGB}{233,77,16}
+\definecolor{myBlue}{RGB}{56,32,196}
+\definecolor{myGreen}{RGB}{33,222,60}
+
+\usepackage[latin1]{inputenc}
+\usepackage[english]{babel}
+
+\usepackage
+    [separate-uncertainty=true,
+    %multi-part-units=single,
+    list-units=repeat,per-mode = symbol]
+    {siunitx}
 %%% Increase the height of the banner: the argument is a scale factor >=1.0
 % \setbeamertemplate{banner}[ucl][1.5]
 
@@ -10,16 +32,28 @@
 %%%   navyblue,midgreen,darkgrey,orange,brightblue,brightgreen,lightgrey,
 %%%   lightpurple,yellow,lightblue,lightgreen,stone
 % \setbeamercolor{banner}{bg=darkpurple}
-% \setbeamercolor{banner}{bg=yellow,fg=black}
+% \setbeamercolor{banner}{bg=brightblue}
+% \setbeamercolor{banner}{bg=yellow,fg=white}
+
+%%% Set a background colour
+% \setbeamercolor{background canvas}{bg=darkgrey}
+
+%%% Change colour of text if desired
+% \setbeamercolor{normal text}{fg=white}\usebeamercolor*{normal text}
 
 %%% Add a stripe behind the banner
-% \setbeamercolor{banner stripe}{bg=brightblue,fg=black}
+% \setbeamercolor{banner stripe}{bg=pink,fg=white}
+% \setbeamercolor{banner stripe}{bg=stone,fg=white}
+\setbeamercolor{banner stripe}{bg=pink!30,fg=pink}
 
 %%% The main structural elements
-% \setbeamercolor{structure}{fg=black}
+% \setbeamercolor{structure}{fg=white}
+
 
 %%% Author/Title/Date and slide number in the footline
 % \setbeamertemplate{footline}[author title date]
+\setbeamertemplate{footline}[author title frame]
+% \setbeamertemplate{slide counter}[frametotal]
 
 %%% Puts the section/subsection in the headline
 % \setbeamertemplate{headline}[section]
@@ -29,7 +63,7 @@
 %%% followed by a \subsection. Requires one extra compile.
 % \setbeamertemplate{headline}[miniframes]
 %%% Accepts an optional argument determining the width
-% \setbeamertemplate{headline}[miniframes][0.3\paperwidth]
+% \setbeamertemplate{headline}[miniframes][\paperwidth]
 
 
 %%% Puts the frame title in the banner
@@ -38,19 +72,25 @@
 %%% Similar to above, but smaller (and puts subtitle on same line as title)
 % \useoutertheme[small]{ucltitlebanner}
 
+\useoutertheme[title+headline]{ucltitlebanner}
+
+%%% Gives block elements (theorems, examples) a round, shaded border
+\useinnertheme{blockrounded}
+
 %%% Gives block elements (theorems, examples) a border
 % \useinnertheme{blockborder}
 %%% Sets the body of block elements to be clear
 % \setbeamercolor{block body}{bg=white,fg=black}
 
 %%% Include CSML logo on title slide
-% \titlegraphic{\includegraphics[width=0.16\paperwidth]{csml_logo}}
+\titlegraphic{%
+  \includegraphics[height=0.08\paperwidth]{logos/EPSRC}%
+  \hspace{0.5cm}%
+  \includegraphics[height=0.08\paperwidth]{logos/GIFTSurg}%
+  \hspace{0.5cm}%
+  \includegraphics[height=0.08\paperwidth]{logos/EPSRC_CDT}%
+  }
 
-%%% Include CSML logo in bottom right corner of all slides
-% \logo{\includegraphics[width=0.12\paperwidth]{csml_logo}}
-
-%%% Set a background colour
-% \setbeamercolor{background canvas}{bg=lightgrey}
 
 %%% Set a background image
 %%% Some sample images are available from the UCL image store:
@@ -62,9 +102,13 @@
 
 %%%%%% Some other settings that can make things look nicer
 %%% Set a smaller indent for description environment
-\setbeamersize{description width=2em}
-%%% Remove nav symbols (and shift any logo down to corner)
-\setbeamertemplate{navigation symbols}{\vspace{-2ex}} 
+% \setbeamersize{description width=2em}
+
+
+
+\def\headline#1{\begin{frame}[c]\centering\color{headlinecolor}\LARGE\bfseries#1\end{frame}}
+\newcommand{\subheadline}[2]{\begin{frame}\color{headlinecolor}{#1}\begin{center}\color{headlinecolor}\Large\bfseries#2\end{center}\end{frame}}
+\newcommand{\remember}[2][0.5]{{\scriptsize\hfill\color{dunkelgrau}$\displaystyle #2$}\vspace*{#1 cm}}
 
 
 
@@ -76,6 +120,11 @@
 }
 \date{28th January 2011}
 
+
+\input{00_Makros}
+
+
+
 \begin{document}
 
 
@@ -83,167 +132,189 @@
   \titlepage
 \end{frame}
 
-\section{Section 1}
-\subsection{First subsection}
-
-\begin{frame}
-  \frametitle{First Slide}
-  \begin{itemize}
-  \item 1
-  \item 2
-    \pause
-  \item \alert{Alert!!}
-  \end{itemize}
+\begin{frame}[t]\frametitle{Agenda}
+   \tableofcontents%[hideallsubsections]
 \end{frame}
 
-\begin{frame}
-  \frametitle{Second Slide}
-  \framesubtitle{with a subtitle}
-  \begin{alertblock}{Help!}
-    text here
-    \begin{itemize}
-    \item point 1
+%%% Include CSML logo in bottom right corner of all slides
+\logo{%
+  \includegraphics[width=0.12\paperwidth]{logos/GIFTSurg}}
+%%% Remove nav symbols (and shift any logo down to corner)
+\setbeamertemplate{navigation symbols}{\vspace{-2ex}} 
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Introduction
+
+\section{Motivation \& Aims}
+\headline{Motivation \& Aims}
+
+% \subsection{CVDs}
+
+\begin{frame}[t]\frametitle{Motivation}\framesubtitle{Subtitle}
+    \begin{itemize}[<+->]\setlength{\itemsep}{12pt}
+        \item Scanning time considerations and patient motion limits spatial resolution in MRI
+        \item In case of moving subjects:
+        \begin{itemize}
+            \item 2D sequences with {\bf anisotropic voxel spacing}
+            \item High SNR {\bf in-plane} resolution visually appealing
+            \item \textbf{Often overlooked:} Effect of partial voluming in slice-select direction
+        \end{itemize}
+        \item Super-resolution reconstruction (SRR) approaches are capable to reduce partial voluming effects (PVE)
     \end{itemize}
-  \end{alertblock}
-  
-  \begin{example}
-    \begin{itemize}
-    \item 3
-    \item 4
+\end{frame}
+
+\begin{frame}[t,label=Aims]\frametitle{Aims}
+    \begin{itemize}\setlength{\itemsep}{12pt}
+        \item<1-> Comparison and evaluation of all SRR MRI techniques
+        \begin{itemize}
+            \item Frequency domain
+            \item Image domain
+            \item Wavelet domain
+        \end{itemize}
+        \item<2-> Evaluation of use of all approaches to correct through-plane PVEs in MRI
+        \item<3-> Focus on resolution enhancement $\Rightarrow$ {\bf motion-free} scenarios
     \end{itemize}
-  \end{example}
 \end{frame}
 
-%%% Can be a bit much UCL
-%%% from here on, remove branding from banners
-\setbeamertemplate{banner}[blank]
+\section{Methods}
+\headline{Methods}
 
-\section{Section 2}
-\subsection{Second subsection}
+\subsection[Frequency]{SRR in Frequency Domain} % (fold)
+\label{sub:k_space}
 
-\frame {
-  \frametitle{Third Slide}
-  \begin{enumerate}
-  \item 1
-  \item 2 
-  \end{enumerate}
-  \begin{theorem}
-    This is a result.
-  \end{theorem}
+% subsection k_space (end)
+\begin{frame}[c]\frametitle{SRR in Frequency Domain}
+    \includegraphics[width=1\textwidth]{figures/Gholipour2015_fig1.png}
 
-  \[
-  x_i = y_i + \varepsilon_i
-  \]
-}
-
-
-\frame {
-  \frametitle{Conclusions}
-  \begin{block}{A block}
-    An environment inside the block
-    \begin{description}
-    \item[The first step:] This is a very long description, and will wrap onto
-      the next line
-    \item[Step B:] text
-    \end{description}
-
+    \visible<2->{
+    \textbf{$\boldsymbol{k}$-space sampling:}
     \begin{itemize}
-    \item a
-    \item b
+        \item Phase and frequency encoding directions: HF sampling
+        \item Slice-select direction: No HF sampling
     \end{itemize}
-  \end{block}
-  \begin{itemize}
-  \item 
-  \item 
-  \item
-  \item
-  \item
-  \item
-  \item 
-  \end{itemize}
-}
-
-
-
-%%% Customise the banner using a department headline slogan
-
-\section{Headline customisation}
-
-%%% use department headline template
-\setbeamertemplate{headline}[department]
-
-%%% set department and subdepartment
-\setbeamertemplate{department}{Department of Sample Science}
-\setbeamertemplate{subdepartment}{Subdepartment slogan}
-
-%%% customise the fonts
-\setbeamerfont{section in head/foot}{shape=\scshape,size=\scriptsize,series=\bfseries}
-\setbeamerfont{subsection in head/foot}{shape=\scshape,size=\tiny,series=\bfseries}
-
-%%% customise the colors
-\setbeamercolor{section in head/foot}{fg=white}
-\setbeamercolor{subsection in head/foot}{fg=banner.fg!80!banner.bg}
-
-%%% UCL logo can also be customised
-\setbeamertemplate{banner}[ucl]
-\setbeamercolor{banner}{bg=black}
-\setbeamercolor{banner stripe}{bg=brightblue,fg=black}
-
-\begin{frame}
-  \frametitle{Slide with custom headline}
+    }
+    \visible<3->{
+    $\Rightarrow$ Fusion of $k$-space data from different stacks!
+    }
 \end{frame}
 
 
+\subsection[Image]{SRR in Image Domain} % (fold)
+\label{sub:image_domain}
 
-%%% Customise the slide counter in the footline
+\begin{frame}{SRR in Image Domain}
+    \visible<1->{
+        \begin{minipage}{0.65\textwidth}
+            \textbf{Slice acquisition model:}
+            \begin{align*}
+                \y_k = \DD_k\,\BB_k\,\SS_k\,\x + \n_k
+            \end{align*}
+            \vspace*{-.5cm}
+            {\small
+            \begin{align*}
+                &\y_k   &&     \text{ Low-resolution slice } k \\
+                &\x     &&     \text{ High-resolution data (sought SRR)} \\
+                &\DD_k  &&     \text{ Down-sampling matrix} \\
+                &\BB_k  &&     \text{ Blur matrix (PSF)} \\
+                &\SS_k  &&     \text{ Slice-select operator} \\
+                &\n_k   &&     \text{ Noise vector }
+            \end{align*}
+            }
+        \end{minipage}}
+    \hfill
+    \begin{minipage}{0.27\textwidth}
+        \includegraphics[width=1.2\textwidth]{figures/SRR_ImageDomain.png}
+    \end{minipage}
+\end{frame}
+% subsection image_domain (end)
 
-\section{Slide counters}
+\subsection[Wavelet]{SRR in Wavelet Domain} % (fold)
+\label{sub:wavelet_domain}
+\begin{frame}[t]\frametitle{SRR in Wavelet Domain}
+    \begin{minipage}{0.65\textwidth}
+        \textbf{Key idea:}
+        \begin{itemize}
+            \item Decompose MRI scan with 3D wavelet transform:
+            \begin{itemize}
+                \item 8 blocks
+                \item in $XYZ$-coordinate system
+            \end{itemize}
+        \item Low- and high-frequency information in image directions
+        $\left.
+      \begin{array}{l}
+          LLL \\
+          LLH \\
+          LHL \\
+          \vdots \\
+          HHH 
+      \end{array}
+    \right\}  \Rightarrow 2^{3}=8$ blocks
+        \end{itemize}
+        % \vspace*{0.5cm}
+        \tiny{Aganj et al. (2012). A 3D wavelet fusion approach for the reconstruction of isotropic-resolution MR images from orthogonal anisotropic-resolution scans.}
+    \end{minipage}
+    \hfill
+    \visible<2->{
+    \begin{minipage}{0.27\textwidth}
+        \includegraphics[width=1.2\textwidth]{figures/SRR_WaveletDomain.png}\\
+    \end{minipage}
+    }
+\end{frame}
+% subsection wavelet_domain (end)
 
-%%% use footline template
-\setbeamertemplate{footline}[author title date]
-\setbeamercolor{footline}{use=banner, bg=black, fg=banner.fg!80!banner.bg}
+\subsection[Evaluation]{Evaluation Methods} % (fold)
+\label{sub:evaluation_methods}
 
-%%% frame/total: show frame number and total number of frames
-\begin{frame}{Slide counters}
-  \framesubtitle{\texttt{frametotal} is the default}
-  Three templates for the slide counter in the footline are available:
-  \begin{itemize}
-    \item \texttt{frametotal} prints the current frame number and the total number (default)
-    \item \texttt{frameonly} prints the current frame number only
-    \item \texttt{empty} does not print a slide counter
-  \end{itemize}
+\begin{frame}[t]\frametitle{Evaluation Methods}
+    % \begin{minipage}{0.45\textwidth}
+        \begin{exampleblock}<1->{1) Comparison of SRR Methods: Phantom Imaging}
+            \begin{itemize}
+                % \item American College of Radiology phantom imaging
+                % \item
+                \item T2-weighted FSE MRI
+                \begin{itemize}
+                    \item  $4\times 4$ pinhole structures \\
+                        (diameters of \SI{1.1}{\mm}, \SI{1.0}{\mm} and \SI{0.9}{\mm})
+                    \item In-plane resolution $\SI{0.7}{\mm}\times\SI{0.7}{\mm}$
+                    \item Slice thickness: \SI{1.4}{\mm}
+                \end{itemize}
+                \item Isotropic HR reference: \SI{0.7}{\mm}
+
+            \end{itemize}
+        \end{exampleblock}
+    % \end{minipage}\hfill
+
+    % \begin{minipage}{0.45\textwidth}
+        \begin{alertblock}<2->{2) Clinical Application: Neuroimaging}
+            \begin{itemize}
+
+                \item Clinical protocol imaging for TSC patients
+                \item T2-weighted FSE MRI
+                \begin{itemize}
+                    \item In-plane resolution: $\SI{0.4}{\mm}\times\SI{0.6}{\mm}$
+                    \item Slice thickness: \SI{2}{\mm}
+                \end{itemize}
+            \end{itemize}
+        \end{alertblock}
+    % \end{minipage} rounded=true,shadow=true
 \end{frame}
 
-\setbeamertemplate{slide counter}[frameonly]
-\begin{frame}{Slide counters}
-  \framesubtitle{A slide with \texttt{frameonly} slide counter}    
+\begin{frame}[t]\frametitle{Evaluation Methods}\framesubtitle{Some more methods}
+    \begin{block}<2->{2) Clinical Application: Neuroimaging}
+        \begin{itemize}
+
+            \item Clinical protocol imaging for TSC patients
+            \item T2-weighted FSE MRI
+            \begin{itemize}
+                \item In-plane resolution: $\SI{0.4}{\mm}\times\SI{0.6}{\mm}$
+                \item Slice thickness: \SI{2}{\mm}
+            \end{itemize}
+        \end{itemize}
+    \end{block}
 \end{frame}
 
-\setbeamertemplate{slide counter}[empty]
-\begin{frame}{Slide counters}
-  \framesubtitle{A slide with \texttt{empty} slide counter}
-\end{frame}
-
-\setbeamertemplate{slide counter}[frameonly][Slide]
-\begin{frame}{Slide counters}
-  \framesubtitle{Optional argument can be printed in front of the current number}
-  \texttt{frametotal} and \texttt{frameonly} take an optional argument
-  to be printed in front of the current number (e.g. 'Slide').
-\end{frame}
-
-\setbeamertemplate{slide counter}[frametotal][Slide]
-\begin{frame}{Slide counters}
-  \framesubtitle{Optional argument with \texttt{frametotal}}
-\end{frame}
-
-%%% switch back to plain headline/footline
-\setbeamertemplate{banner}[blank]
-\setbeamertemplate{headline}[ucl]
-\setbeamertemplate{slide counter}[frametotal]
-
-\frame {
-  \frametitle{Acknowledgements}
-
-}
+% subsection evaluation_methods (end)
 
 \end{document}

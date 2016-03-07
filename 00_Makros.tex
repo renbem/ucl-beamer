@@ -1,0 +1,111 @@
+\def\R{\mathbb{R}}
+\def\N{\mathbb{N}}
+\def\Z{\mathbb{Z}}
+\def\P{\mathbb{P}}
+
+\def\G{\mathbb{G}}
+
+\def\e{\mathbf{e}}
+\def\g{\mathbf{g}}
+\def\h{\mathbf{h}}
+\def\u{\mathbf{u}}
+\def\x{\mathbf{x}}
+\def\z{\mathbf{z}}
+\def\c{\mathbf{c}}
+\def\b{\mathbf{b}}
+\def\y{\mathbf{y}}
+\def\r{\mathbf{r}}
+\def\f{\mathbf{f}}
+\def\b{\mathbf{b}}
+\def\n{\mathbf{n}}
+\def\p{\mathbf{p}}
+\def\0{\mathbf{0}}
+
+\def\im{\mathrm{i}}
+
+\def\BB{\mathbf{B}}
+\def\DD{\mathbf{D}}
+\def\SS{\mathbf{S}}
+\def\KK{\mathbf{K}}
+\def\MM{\mathbf{M}}
+\def\HH{\mathbf{H}}
+\def\WW{\mathbf{W}}
+
+\def\Id{\mathbf{Id}}
+
+
+%\def\u{\boldsymbol{u}}
+%\def\c{\mathbf{c}}
+%\def\0{\mathbf{0}}
+
+\def\II{\mathcal{I}}
+
+\def\E{\mathcal{E}}
+\def\O{\mathcal{O}}
+\def\T{\mathcal{T}}
+
+\def\I{\texttt{I}}
+
+\def\subset{\subseteq}
+\def\squareShadow{\ding{113}}	
+\def\MyLineWidth{1pt}
+
+
+\newcommand\spana{\text{\rm span}}
+\newcommand\argmin{\operatornamewithlimits{argmin}}
+\newcommand\argmax{\operatornamewithlimits{argmax}}
+\newcommand{\diam}[1]{\text{\rm diam}(#1)}
+\renewcommand{\Re}{\text{\rm Re}}
+\renewcommand{\Im}{\text{\rm Im}}
+\newcommand{\length}{\text{\rm length}}
+\newcommand{\diag}{\text{\rm diag}}
+\newcommand{\quadr}{\text{\rm quad}}
+\newcommand{\conv}[2]{\text{\rm conv}\{#1,#2\}}
+\newcommand{\set}[2]{\left\{#1\,:\,#2\right\}}
+% \newcommand{\set}[2]{\left\{#1\,\middle|\,#2\right\}}
+\newcommand{\norm}[2][]{\ifthenelse{\equal{#1}{}}{\left\Vert #2 \right\Vert}{\left\Vert #2\right\Vert_{#1}}}
+\newcommand{\skp}[3][]{\ifthenelse{\equal{#1}{}}{\left\langle #2\,,\,#3 \right\rangle_{L^2(\R)}}{\left\langle #2\,,\,#3 \right\rangle_{#1}}}
+\newcommand{\mean}[1]{\left\langle #1\right\rangle}
+
+\newcommand{\emean}[2][]{\langle\!\;\!\!#1\langle#2\rangle\!\;\!\!#1\rangle}
+
+\newcommand{\GA}{\text{GA}}
+\newcommand{\TR}{\text{TR}}
+\newcommand{\TE}{\text{TE}}
+
+\def\myVspaceTable{\vspace*{0.5cm}}
+
+\newcommand{\mypsfrag}[4]{\psfrag{#4}[#1][#2]{#3 \num{#4}}}
+
+%**Scheiss Problem!?!?
+% zB: ersetze 83,84,85: er findet sie aber ersetzt alle durch letzten Eintrag (85)!?
+% \newcounter{ctrpsfrag}
+% \newcommand{\mypsfragloop}[6]{
+% 	\forLoop[#5]{#4}{#6}{ctrpsfrag}{%
+% 		\psfrag{\arabic{ctrpsfrag}}[#1][#2]{#3 $\arabic{ctrpsfrag}$}
+% 	}
+% }
+
+% 	\mypsfragloop{r}{r}{\scriptsize}{83}{1}{89}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Selbst-nummerierende Konstanten: %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\newconst}[1]{%
+	\refstepcounter{const}%
+	C_{\theconst}\label{const:#1}%
+}
+\newcommand{\const}[1]{C_{\ref{const:#1}}}
+
+
+%Makro f\"ur aufeinander folgende Erh\"ohung der Lemma-/Satz-/Definitions- und Algorithmus-Counter
+\newcommand{\updateCtr}[1]{
+	\addtocounter{helper}{1}	%Master-Ctr inkrementieren
+
+	\FPset\dummy{\thehelper}  %Da Befehl refstepcounter auch um eines erh\"oht, w\"urde ohne diese Zeilen
+	\FPsub\dummy\thehelper{1} %erster Counter-Wert gleich 2 sein.
+	\FPclip\dummy\dummy
+
+	\setcounter{#1}{\dummy}
+	\refstepcounter{#1}
+}

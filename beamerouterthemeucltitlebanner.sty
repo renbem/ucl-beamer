@@ -10,6 +10,11 @@
   \setbeamertemplate{banner}[ucl][1.5]%
   \setbeamertemplate{frametitle}[two lines]%
 }
+\DeclareOptionBeamer{title+headline}{%
+  \setbeamertemplate{banner}[ucl][1.1]%
+  \setbeamertemplate{headline}[split theme]%
+  \setbeamertemplate{frametitle}[one line for headline]%
+}
 
 % reset headline to default
 \setbeamertemplate{headline}[default]
@@ -55,6 +60,27 @@
   \end{beamercolorbox}
   \ifbeamercolorempty[bg]{banner stripe}{}{\vspace{\stripeheight}}%
   }
+
+  % puts the title and subtitle on the same line
+  \defbeamertemplate{frametitle}{one line for headline}{%
+    \begin{beamercolorbox}[ignorebg,ht=\bannerheight]{frametitle}%
+      \vbox to\bannerheight{
+        \vspace{0ex}%
+        \usebeamerfont{frametitle}\usebeamercolor[fg]{frametitle}%
+        \strut\insertframetitle\strut%
+        {%
+          \ifx\insertframesubtitle\@empty%
+          \else%
+          {\hspace{0.6em}\usebeamerfont{framesubtitle}\usebeamercolor[fg]{framesubtitle}\insertframesubtitle\strut}%
+          \fi
+        }%
+        \par%
+        \vfil%
+      }
+    \end{beamercolorbox}
+    \vspace*{-0.3cm}% %to reduce top margin
+    \ifbeamercolorempty[bg]{banner stripe}{}{\vspace{\stripeheight}}%
+    }
 
 
 % this ensures the title page doesn't overlap the banner

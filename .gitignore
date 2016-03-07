@@ -5,5 +5,10 @@
 *.pdf
 *.snm
 *.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+figures/
+!logos/*pdf
 !banners/*.pdf
 !csml_logo.pdf

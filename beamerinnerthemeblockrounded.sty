@@ -1,0 +1,93 @@
+% sets the block environment to have borders
+% this modifies the default definition in beamerinnerthemedefault.sty
+% the effect is achieved using nested beamercolorboxes
+% it may be possible to do this in a simpler manner using the 
+% tcolorbox package
+
+\defbeamertemplateparent{blocks}[myrounded]{block begin,block end,%
+  block alerted begin,block alerted end,%
+  block example begin,block example end}{}
+
+% Standard block
+\defbeamertemplate*{block begin}{myrounded}{%
+  \par\vskip\medskipamount%
+  % title box
+  \begin{beamercolorbox}[rounded=true,shadow=true,colsep*=0.7ex]{block title}%
+    \vskip-2.7ex% 
+    {\usebeamerfont*{block title}\insertblocktitle\par}%
+    {\parskip0pt\par}%
+    \vskip-0.2ex%
+    % dummy body box: No rounded corners. Yields effect of corners with overlapped subsequent one 
+    \begin{beamercolorbox}[colsep*=0.75ex,sep=0ex]{block body}
+      {\usebeamerfont*{block body}\parskip0pt\par}%
+    \end{beamercolorbox}%
+    \vskip-1.4ex %Reduce spacing so that rounded body box covers bottom of dummy body box
+    % body box
+    \begin{beamercolorbox}[rounded=true,colsep*=0.75ex,sep=0ex]{block body}
+      {\usebeamerfont*{block body}%
+      \vskip-3.5ex%
+      \parskip0pt\par}%
+    }
+\defbeamertemplate*{block end}{myrounded}{%
+      \vskip-1.9ex%
+    \end{beamercolorbox}%
+    \vskip-1.23ex% %hide title box behind body with aligned boundary
+  \end{beamercolorbox}%
+  \vskip\smallskipamount%
+}
+
+% Alerted block
+\defbeamertemplate*{block alerted begin}{myrounded}{%
+  \par\vskip\medskipamount%
+  % title box
+  \begin{beamercolorbox}[rounded=true,shadow=true,colsep*=0.7ex]{block title alerted}%
+    \vskip-2.7ex%
+    {\usebeamerfont*{block title alerted}\insertblocktitle\par}%
+    {\parskip0pt\par}%
+    \vskip-0.2ex%
+    % dummy body box: No rounded corners. Yields effect of corners with overlapped subsequent one 
+    \begin{beamercolorbox}[colsep*=0.75ex,sep=0ex]{block body alerted}
+      {\usebeamerfont*{block body alerted}\parskip0pt\par}%
+    \end{beamercolorbox}%
+    \vskip-1.4ex %Reduce spacing so that rounded body box covers bottom of dummy body box
+    % body box
+    \begin{beamercolorbox}[rounded=true,colsep*=0.75ex,sep=0ex]{block body alerted}
+      {\usebeamerfont*{block body alerted}%
+      \vskip-3.5ex%
+      \parskip0pt\par}%
+    }
+\defbeamertemplate*{block alerted end}{myrounded}{%
+      \vskip-1.9ex%
+    \end{beamercolorbox}%
+    \vskip-1.23ex% %hide title box behind body with aligned boundary
+  \end{beamercolorbox}%
+  \vskip\smallskipamount%
+}
+
+% Example block
+\defbeamertemplate*{block example begin}{myrounded}{%
+  \par\vskip\medskipamount%
+  % title box
+  \begin{beamercolorbox}[rounded=true,shadow=true,colsep*=0.7ex]{block title example}%
+    \vskip-2.7ex%
+    {\usebeamerfont*{block title example}\insertblocktitle\par}%
+    {\parskip0pt\par}%
+    \vskip-0.2ex%
+    % dummy body box: No rounded corners. Yields effect of corners with overlapped subsequent one 
+    \begin{beamercolorbox}[colsep*=0.75ex,sep=0ex]{block body example}
+      {\usebeamerfont*{block body example}\parskip0pt\par}%
+    \end{beamercolorbox}%
+    \vskip-1.4ex %Reduce spacing so that rounded body box covers bottom of dummy body box
+    % body box
+    \begin{beamercolorbox}[rounded=true,colsep*=0.75ex,sep=0ex]{block body example}
+      {\usebeamerfont*{block body example}%
+      \vskip-3.5ex%
+      \parskip0pt\par}%
+    }
+\defbeamertemplate*{block example end}{myrounded}{%
+      \vskip-1.9ex%
+    \end{beamercolorbox}%
+    \vskip-1.23ex% %hide title box behind body with aligned boundary
+  \end{beamercolorbox}%
+  \vskip\smallskipamount%
+}
