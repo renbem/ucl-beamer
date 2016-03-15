@@ -1,5 +1,8 @@
 \usetheme{default}
-\usecolortheme{ucl}
+
+%** Look at http://tex.stackexchange.com/questions/123700/how-to-use-local-beamer-theme-in-project-source-folder
+% Before: \usecolortheme{ucl}; Now: \usepackage{UCL-Beamer/beamercolorthemeucl}
+\usepackage{UCL-Beamer/beamercolorthemeucl}
 \RequirePackage{calc}
 
 % the height of the banner (after scaling)
@@ -14,7 +17,7 @@
 \defbeamertemplate*{banner}{ucl}[1][1]{%
   \uclcolorname{banner.bg}{\ucl@bannercolorname}%
   \includegraphics[width=\paperwidth,trim=\bannerimagetrim{} 0 0 0]% 
-  {banners/uclbanner\ucl@bannercolorname}%
+  {UCL-Beamer/banners/uclbanner\ucl@bannercolorname}%
 }
 [action]{% set lengths when loading template
   \setlength\bannerimagetrim{363bp-363bp/\real{#1}}

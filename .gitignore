@@ -9,6 +9,5 @@
 *.fls
 *.fdb_latexmk
 figures/
-!logos/*pdf
-!banners/*.pdf
-!csml_logo.pdf
+!UCL-Beamer/logos/*pdf
+!UCL-Beamer/banners/*.pdf

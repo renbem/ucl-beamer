@@ -1,6 +1,9 @@
 \documentclass[compress,12pt,handout]{beamer}
-\usetheme{ucl}
 
+% Instead of \usetheme{ucl} use following line now given the subfolder structure
+%** Look at http://tex.stackexchange.com/questions/123700/how-to-use-local-beamer-theme-in-project-source-folder
+% Before: \usetheme{ucl}; Now: \usepackage{UCL-UCL-Beamer/beamerthemeucl}; analog others in this document
+\usepackage{UCL-Beamer/beamerthemeucl}
 
 % Define user colors using the RGB model
 \definecolor{dunkelgrau}{rgb}{0.4,0.4,0.4}
@@ -52,7 +55,7 @@
 
 %%% Author/Title/Date and slide number in the footline
 % \setbeamertemplate{footline}[author title date]
-\setbeamertemplate{footline}[author title frame]
+% \setbeamertemplate{footline}[author title frame]
 % \setbeamertemplate{slide counter}[frametotal]
 
 %%% Puts the section/subsection in the headline
@@ -68,27 +71,28 @@
 
 %%% Puts the frame title in the banner
 %%% Won't work correctly with the above headline templates
-% \useoutertheme{ucltitlebanner}
+% Instead of \useoutertheme{ucltitlebanner} use following line now given the subfolder structure
+% \usepackage{UCL-Beamer/beamerouterthemeucltitlebanner}
 %%% Similar to above, but smaller (and puts subtitle on same line as title)
-% \useoutertheme[small]{ucltitlebanner}
+% \usepackage[small]{UCL-Beamer/beamerouterthemeucltitlebanner}
 
-\useoutertheme[title+headline]{ucltitlebanner}
+\usepackage[title+headline]{UCL-Beamer/beamerouterthemeucltitlebanner}
 
 %%% Gives block elements (theorems, examples) a round, shaded border
-\useinnertheme{blockrounded}
+\usepackage{UCL-Beamer/beamerinnerthemeblockrounded}
 
 %%% Gives block elements (theorems, examples) a border
-% \useinnertheme{blockborder}
+% \usepackage{UCL-Beamer/beamerinnerthemeblockborder}
 %%% Sets the body of block elements to be clear
 % \setbeamercolor{block body}{bg=white,fg=black}
 
 %%% Include CSML logo on title slide
 \titlegraphic{%
-  \includegraphics[height=0.08\paperwidth]{logos/EPSRC}%
+  \includegraphics[height=0.08\paperwidth]{UCL-Beamer/logos/EPSRC}%
   \hspace{0.5cm}%
-  \includegraphics[height=0.08\paperwidth]{logos/GIFTSurg}%
+  \includegraphics[height=0.08\paperwidth]{UCL-Beamer/logos/GIFTSurg}%
   \hspace{0.5cm}%
-  \includegraphics[height=0.08\paperwidth]{logos/EPSRC_CDT}%
+  \includegraphics[height=0.08\paperwidth]{UCL-Beamer/logos/EPSRC_CDT}%
   }
 
 
@@ -102,7 +106,7 @@
 
 %%%%%% Some other settings that can make things look nicer
 %%% Set a smaller indent for description environment
-% \setbeamersize{description width=2em}
+\setbeamersize{description width=2em}
 
 
 
@@ -138,7 +142,7 @@
 
 %%% Include CSML logo in bottom right corner of all slides
 \logo{%
-  \includegraphics[width=0.12\paperwidth]{logos/GIFTSurg}}
+  \includegraphics[width=0.12\paperwidth]{UCL-Beamer/logos/GIFTSurg}}
 %%% Remove nav symbols (and shift any logo down to corner)
 \setbeamertemplate{navigation symbols}{\vspace{-2ex}} 
 
