@@ -1,4 +1,5 @@
-\documentclass[compress,12pt,handout]{beamer}
+% \documentclass[compress,12pt]{beamer} %Presentation mode
+\documentclass[compress,12pt,handout]{beamer} %Handout mode
 
 % Instead of \usetheme{ucl} use following line now given the subfolder structure
 %** Look at http://tex.stackexchange.com/questions/123700/how-to-use-local-beamer-theme-in-project-source-folder
@@ -56,6 +57,7 @@
 %%% Author/Title/Date and slide number in the footline
 % \setbeamertemplate{footline}[author title date]
 % \setbeamertemplate{footline}[author title frame]
+\setbeamertemplate{footline}[title author frame]
 % \setbeamertemplate{slide counter}[frametotal]
 
 %%% Puts the section/subsection in the headline
@@ -76,7 +78,8 @@
 %%% Similar to above, but smaller (and puts subtitle on same line as title)
 % \usepackage[small]{UCL-Beamer/beamerouterthemeucltitlebanner}
 
-\usepackage[title+headline]{UCL-Beamer/beamerouterthemeucltitlebanner}
+\usepackage[title+sectiononlyheadline]{UCL-Beamer/beamerouterthemeucltitlebanner}
+% \usepackage[title+headline]{UCL-Beamer/beamerouterthemeucltitlebanner}
 
 %%% Gives block elements (theorems, examples) a round, shaded border
 \usepackage{UCL-Beamer/beamerinnerthemeblockrounded}
@@ -86,7 +89,7 @@
 %%% Sets the body of block elements to be clear
 % \setbeamercolor{block body}{bg=white,fg=black}
 
-%%% Include CSML logo on title slide
+%%% Include logo on title slide
 \titlegraphic{%
   \includegraphics[height=0.08\paperwidth]{UCL-Beamer/logos/EPSRC}%
   \hspace{0.5cm}%
@@ -106,8 +109,10 @@
 
 %%%%%% Some other settings that can make things look nicer
 %%% Set a smaller indent for description environment
-\setbeamersize{description width=2em}
+% \setbeamersize{description width=2em}
 
+% Remove navigation symbols
+% \setbeamertemplate{navigation symbols}{}
 
 
 \def\headline#1{\begin{frame}[c]\centering\color{headlinecolor}\LARGE\bfseries#1\end{frame}}
@@ -119,10 +124,10 @@
 \title[Short Title]{Title of the Presentation}
 \author[Auth. 1 \and Auth.2]{Author 1 \and Author 2}
 \institute[UCL]{%
-  Department of Statistical Science \\ %
+  Translational Imaging Group, CMIC\\%
   University College London
 }
-\date{28th January 2011}
+\date{\today}
 
 
 \input{00_Makros}
@@ -136,16 +141,15 @@
   \titlepage
 \end{frame}
 
-\begin{frame}[t]\frametitle{Agenda}
-   \tableofcontents%[hideallsubsections]
-\end{frame}
-
-%%% Include CSML logo in bottom right corner of all slides
+%%% Include logo in bottom right corner of all slides
 \logo{%
   \includegraphics[width=0.12\paperwidth]{UCL-Beamer/logos/GIFTSurg}}
 %%% Remove nav symbols (and shift any logo down to corner)
 \setbeamertemplate{navigation symbols}{\vspace{-2ex}} 
 
+\begin{frame}[t]\frametitle{Agenda}
+   \tableofcontents%[hideallsubsections]
+\end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

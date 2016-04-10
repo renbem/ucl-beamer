@@ -92,13 +92,23 @@
 
 \defbeamertemplate*{headline}{split theme}
 {%
+  % Titlepage: No headline
+  \ifnumequal{\c@framenumber}{1}{%
   \leavevmode%
-  \begin{beamercolorbox}[ignorebg,wd=.5\paperwidth,ht=2.5ex,dp=1.125ex]{section in head/foot}%
-    \insertsectionnavigationhorizontal{.5\paperwidth}{\hskip5pt plus1filll}{}%
-  \end{beamercolorbox}%
-  \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.5ex,dp=1.125ex]{my title in head/foot}%
-    \insertsubsectionnavigationhorizontal{.5\paperwidth}{}{\hskip0pt plus1filll}%
-  \end{beamercolorbox}%
+    \begin{beamercolorbox}[ignorebg,wd=\paperwidth,ht=2.5ex,dp=1.125ex]{section in head/foot}%
+    %
+    \end{beamercolorbox}%
+  }
+  % All other pages: headline
+  {%
+    \leavevmode%
+    \begin{beamercolorbox}[ignorebg,wd=.5\paperwidth,ht=2.5ex,dp=1.125ex]{section in head/foot}%
+      \insertsectionnavigationhorizontal{.5\paperwidth}{\hskip5pt plus1filll}{}%
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.5ex,dp=1.125ex]{my title in head/foot}%
+      \insertsubsectionnavigationhorizontal{.5\paperwidth}{}{\hskip0pt plus1filll}%
+    \end{beamercolorbox}%
+  }
 }
 
 \else
@@ -124,6 +134,57 @@
 }
 
 \fi
+
+\ifbeamer@compress
+
+\defbeamertemplate*{headline}{only section theme}
+{%
+  % Titlepage: No headline
+  \ifnumequal{\c@framenumber}{1}{%
+  \leavevmode%
+    \begin{beamercolorbox}[ignorebg,wd=\paperwidth,ht=2.5ex,dp=1.125ex]{section in head/foot}%
+    %
+    \end{beamercolorbox}%
+  }
+  % All other pages: single headline with only section in the header
+  {%
+    \leavevmode%
+    \begin{beamercolorbox}[ignorebg,wd=\paperwidth,ht=2.5ex,dp=1.125ex]{section in head/foot}%
+      % {\centering%
+      \insertsectionnavigationhorizontal{\paperwidth}{\hskip5pt plus1filll}{\hskip5pt plus1filll}%
+      % }
+    \end{beamercolorbox}%
+    % \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.5ex,dp=1.125ex]{my title in head/foot}%
+    %   \insertsubsectionnavigationhorizontal{.5\paperwidth}{}{\hskip0pt plus1filll}%
+    % \end{beamercolorbox}%
+  }
+}
+
+\else
+% TODO: update for only section theme (justs copied from split theme)
+\defbeamertemplate*{headline}{only section theme}
+{%
+  \leavevmode%
+  \@tempdimb=2.4375ex%
+  \ifnum\beamer@subsectionmax<\beamer@sectionmax%
+    \multiply\@tempdimb by\beamer@sectionmax%
+  \else%
+    \multiply\@tempdimb by\beamer@subsectionmax%
+  \fi%
+  \ifdim\@tempdimb>0pt%
+    \advance\@tempdimb by 1.825ex%
+    \begin{beamercolorbox}[wd=.5\paperwidth,ht=\@tempdimb]{section in head/foot}%
+      \vbox to\@tempdimb{\vfil\insertsectionnavigation{.5\paperwidth}\vfil}%
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.5\paperwidth,ht=\@tempdimb]{subsection in head/foot}%
+      \vbox to\@tempdimb{\vfil\insertsubsectionnavigation{.5\paperwidth}\vfil}%
+    \end{beamercolorbox}%
+  \fi%
+}
+
+\fi
+
+
 
 % use boxes instead of circles
 % \setbeamertemplate{mini frames}[circle]
@@ -176,6 +237,22 @@
   \end{beamercolorbox}%
   \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.25ex,dp=1ex,left,leftskip=0.5em,rightskip=.5em]{my title in head/foot}%
     \usebeamerfont{my title in head/foot}\insertshorttitle\hfill\insertframenumber
+  \end{beamercolorbox}%
+  % \begin{beamercolorbox}[wd=.0\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+  % \end{beamercolorbox}
+  }%
+  \vskip0pt%
+}
+
+\defbeamertemplate{footline}{title author frame}
+{
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.25ex,dp=1ex,right,rightskip=.9em]{author in head/foot}%
+    \usebeamerfont{author in head/foot}\insertshorttitle
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.25ex,dp=1ex,left,leftskip=0.9em,rightskip=.5em]{my title in head/foot}%
+    \usebeamerfont{my title in head/foot}\insertshortauthor\hfill\insertframenumber
   \end{beamercolorbox}%
   % \begin{beamercolorbox}[wd=.0\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
   % \end{beamercolorbox}

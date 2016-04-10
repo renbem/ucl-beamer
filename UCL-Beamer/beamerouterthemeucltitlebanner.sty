@@ -15,6 +15,11 @@
   \setbeamertemplate{headline}[split theme]%
   \setbeamertemplate{frametitle}[one line for headline]%
 }
+\DeclareOptionBeamer{title+sectiononlyheadline}{%
+  \setbeamertemplate{banner}[ucl][1.1]%
+  \setbeamertemplate{headline}[only section theme]%
+  \setbeamertemplate{frametitle}[one line for headline]%
+}
 
 % reset headline to default
 \setbeamertemplate{headline}[default]
