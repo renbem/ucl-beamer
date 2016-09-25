@@ -1,0 +1,1575 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"f_TK1_SP",
+				"f_TK1_SPD_hess_p"
+			],
+			[
+				"DTD",
+				"DTDATg"
+			],
+			[
+				"ATA",
+				"ATAATg"
+			],
+			[
+				"op_AT",
+				"op_ATg_vec"
+			],
+			[
+				"reconstr",
+				"reconstruction_nda"
+			],
+			[
+				"Dfy",
+				"Dfy_x"
+			],
+			[
+				"Dbx",
+				"Dbx_x"
+			],
+			[
+				"ker",
+				"kernel_L"
+			],
+			[
+				"get_for",
+				"get_forward_difference_x_kernel"
+			],
+			[
+				"get",
+				"getATx"
+			],
+			[
+				"get_back",
+				"get_backward_difference_x_kernel"
+			],
+			[
+				"Cov_",
+				"Cov_3D"
+			],
+			[
+				"op_",
+				"op_ATg"
+			],
+			[
+				"time",
+				"time_elapsed"
+			],
+			[
+				"reco",
+				"reconstruction_TK1_nda"
+			],
+			[
+				"optimi",
+				"optimization"
+			],
+			[
+				"recons",
+				"reconstruction_nda"
+			],
+			[
+				"obser",
+				"observed_nda"
+			],
+			[
+				"show_",
+				"show_reconstruction_results"
+			],
+			[
+				"get_k",
+				"get_forward_difference_x_kernel"
+			],
+			[
+				"nda_",
+				"nda_dx"
+			],
+			[
+				"GetIm",
+				"GetImageFromArray"
+			],
+			[
+				"cmap",
+				"cmap=\"Greys_r\t(SimpleITK_Blurring.py)"
+			],
+			[
+				"k",
+				"kernel_dx"
+			],
+			[
+				"Fet",
+				"FetalBrain_reconstruction_4stacks"
+			],
+			[
+				"z_",
+				"z_interval"
+			],
+			[
+				"getA",
+				"getAx"
+			],
+			[
+				"ndA",
+				"nda_observed"
+			],
+			[
+				"TK",
+				"TK0_hess_p"
+			],
+			[
+				"AT",
+				"ATg"
+			],
+			[
+				"show_i",
+				"show_sitk_image"
+			],
+			[
+				"Cop",
+				"CopyInformation"
+			],
+			[
+				"image_reconstructed_",
+				"image_reconstructed_2D_sitk"
+			],
+			[
+				"GetI",
+				"GetImageFromArray"
+			],
+			[
+				"image_ob",
+				"image_observed_2D_sitk"
+			],
+			[
+				"GetA",
+				"GetArrayFromImage"
+			],
+			[
+				"res",
+				"reshape"
+			],
+			[
+				"kernel",
+				"kernel2D\t(cw01_run.m)"
+			],
+			[
+				"multipli",
+				"multiplicative_noise"
+			],
+			[
+				"nda",
+				"nda_observed"
+			],
+			[
+				"show",
+				"show_sitk_image\t(SimpleITK_Blurring.py)"
+			],
+			[
+				"image_2",
+				"image_2D_sitk"
+			],
+			[
+				"Write",
+				"WriteImage\t(ITK_BlurringOperator_Adjoint.py)"
+			],
+			[
+				"Cov",
+				"Cov_2D"
+			],
+			[
+				"GetR",
+				"GetRequestedRegion"
+			],
+			[
+				"Gene",
+				"GenerateOutputInformation"
+			],
+			[
+				"GetRe",
+				"GetReferenceImage"
+			],
+			[
+				"Gen",
+				"GenerateOutputInformation\t(itkAdjointOrientedGaussianInterpolateImageFilter.h)"
+			],
+			[
+				"GetO",
+				"GetOutput"
+			],
+			[
+				"Adjo",
+				"AdjointOrientedGaussianInterpolateImageFilter"
+			],
+			[
+				"TO",
+				"TOutputImage"
+			],
+			[
+				"ImageToI",
+				"ImageToImageFilter\t(itkAdjointOrientedGaussianInterpolateImageFilter.h)"
+			],
+			[
+				"std",
+				"std::endl"
+			],
+			[
+				"ITK_V",
+				"ITK_OVERRIDE"
+			],
+			[
+				"spli",
+				"splitRegion"
+			],
+			[
+				"co",
+				"cout"
+			],
+			[
+				"inputRe",
+				"inputRegionForThread"
+			],
+			[
+				"vali",
+				"validThreads"
+			],
+			[
+				"m_Out",
+				"m_OutputPtrThread"
+			],
+			[
+				"m_ou",
+				"m_OutputPtrThread"
+			],
+			[
+				"Ot",
+				"OutputImageType"
+			],
+			[
+				"m_O",
+				"m_OutputPtrThread"
+			],
+			[
+				"number",
+				"numberOfThreads"
+			],
+			[
+				"Rel",
+				"RelWithDebInfo"
+			],
+			[
+				"CMAKE_CXX_",
+				"CMAKE_CXX_FLAGS_RELEASE\t(CMakeCache.txt)"
+			],
+			[
+				"CMA",
+				"CMAKE_PREFIX_PATH"
+			],
+			[
+				"MY",
+				"MY_SRC_DIR"
+			],
+			[
+				"Op",
+				"Operator\t(ITK_BlurringOperator_Adjoint.py)"
+			],
+			[
+				"Adjoi",
+				"Adjoint"
+			],
+			[
+				"Adj",
+				"Adjoint"
+			],
+			[
+				"image",
+				"image_type_3D"
+			],
+			[
+				"Disc",
+				"DisconnectPipeline\t(adjointOrientedGaussianInterpolateImageFilter.cpp)"
+			],
+			[
+				"image_itk",
+				"image_itk_del"
+			],
+			[
+				"image_it",
+				"image_itk_del"
+			],
+			[
+				"GetS",
+				"GetSpacing"
+			],
+			[
+				"slice_",
+				"slice_itk"
+			],
+			[
+				"overlay",
+				"overlay_itk"
+			],
+			[
+				"sli",
+				"slice_itk_"
+			],
+			[
+				"Disco",
+				"DisconnectPipeline"
+			],
+			[
+				"Dis",
+				"DisconnectPipeline"
+			],
+			[
+				"outpu",
+				"outputPtr"
+			],
+			[
+				"bounding",
+				"boundingBoxSize"
+			],
+			[
+				"Linea",
+				"LinearInterpolatorType"
+			],
+			[
+				"Lin",
+				"LinearInterpolatorType\t(itkResampleImageFilter.h)"
+			],
+			[
+				"Linear",
+				"LinearInterpolatorType\t(itkResampleImageFilter.h)"
+			],
+			[
+				"reader_",
+				"reader_HR_volume"
+			],
+			[
+				"fil",
+				"filename_out"
+			],
+			[
+				"HR",
+				"HR_volume_itk"
+			],
+			[
+				"abs",
+				"abs_diff"
+			],
+			[
+				"ndaA",
+				"nda_Ady"
+			],
+			[
+				"filter",
+				"filter_OrientedGaussian"
+			],
+			[
+				"Adjoint",
+				"AdjointOrientedGaussianInterpolateImageFilter\t(itkAdjointOrientedGaussianInterpolateImageFilter.h)"
+			],
+			[
+				"image_t",
+				"image_type_3D"
+			],
+			[
+				"statistics",
+				"statisticsImageFilter_2D"
+			],
+			[
+				"Set",
+				"SetInput"
+			],
+			[
+				"My",
+				"MyITKImageHelper::showImage"
+			],
+			[
+				"sub",
+				"subtractImageFilter_2D"
+			],
+			[
+				"subtract",
+				"SubtractImageFilter_2D"
+			],
+			[
+				"mul",
+				"multiplyFilter_2D"
+			],
+			[
+				"Brain",
+				"BrainWeb_2D"
+			],
+			[
+				"filter_A",
+				"filter_AdjointOrientedGaussian_2D"
+			],
+			[
+				"sum_",
+				"sum_forward"
+			],
+			[
+				"SetI",
+				"SetInput"
+			],
+			[
+				"stati",
+				"statisticsImageFilter_2D"
+			],
+			[
+				"St",
+				"StatisticsImageFilterType_2D"
+			],
+			[
+				"itkStatist",
+				"itk::StatisticsImageFilter"
+			],
+			[
+				"Abso",
+				"AbsoluteValueDifferenceImageFilter_2D"
+			],
+			[
+				"file",
+				"filename"
+			],
+			[
+				"imag",
+				"image_2D"
+			],
+			[
+				"Mul",
+				"MultiplyImageFilter_2D"
+			],
+			[
+				"Image",
+				"ImageType2D"
+			],
+			[
+				"Imag",
+				"ImageType2D"
+			],
+			[
+				"test",
+				"test3D"
+			],
+			[
+				"Imae",
+				"Image"
+			],
+			[
+				"ImageTy",
+				"ImageType3D"
+			],
+			[
+				"GetP",
+				"GetPointer\t(itkResampleImageFilter.hxx)"
+			],
+			[
+				"Get",
+				"GetOutput"
+			],
+			[
+				"Im",
+				"ImageType"
+			],
+			[
+				"ImageType",
+				"ImageType::Pointer\t(ImageFactory.h)"
+			],
+			[
+				"Ima",
+				"ImageType::Pointer"
+			],
+			[
+				"SetIn",
+				"SetInputImage\t(itkResampleImageFilter.hxx)"
+			],
+			[
+				"sd",
+				"std::endl\t(itkResampleImageFilter.hxx)"
+			],
+			[
+				"Ge",
+				"GetOutput"
+			],
+			[
+				"convert",
+				"convertedImageType"
+			],
+			[
+				"ret",
+				"retrieveImageType"
+			],
+			[
+				"ImageT",
+				"ImageType3D"
+			],
+			[
+				"m_I",
+				"m_ImageType2D"
+			],
+			[
+				"ImageFa",
+				"ImageFactory"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "sample.tex",
+			"settings":
+			{
+				"buffer_size": 11494,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "UCL-Beamer/uclcolors.sty",
+			"settings":
+			{
+				"buffer_size": 1181,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "UCL-Beamer/beamercolorthemeucl.sty",
+			"settings":
+			{
+				"buffer_size": 3145,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "UCL-Beamer/beamerthemeuclposter.sty",
+			"settings":
+			{
+				"buffer_size": 1032,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "UCL-Beamer/beamerouterthemeucltitlebanner.sty",
+			"settings":
+			{
+				"buffer_size": 3051,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "UCL-Beamer/beamerthemeucl.sty",
+			"settings":
+			{
+				"buffer_size": 10043,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 47.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Discover Packages"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"package inst",
+				"Package Control: Install Package"
+			],
+			[
+				"package control packag",
+				"Package Control: Install Package"
+			],
+			[
+				"package control add pac",
+				"Package Control: Advanced Install Package"
+			],
+			[
+				"package con",
+				"Package Control: Remove Repository"
+			],
+			[
+				"",
+				"Package Control: Add Repository"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 125.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+	],
+	"file_history":
+	[
+		"/Users/mebner/UCL/UCL/Presentations/templates/UCL-Beamer/UCL-Beamer/beamerthemeuclposter.sty",
+		"/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/beamerbasenavigation.sty",
+		"/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/themes/outer/beamerouterthemesplit.sty",
+		"/Users/mebner/UCL/UCL/Presentations/templates/UCL-Beamer/UCL-Beamer/beamerthemeucl.sty",
+		"/Users/mebner/UCL/UCL/Presentations/templates/UCL-Beamer/UCL-Beamer/beamerouterthemeucltitlebanner.sty",
+		"/Users/mebner/UCL/UCL/Presentations/templates/UCL-Beamer/UCL-Beamer/uclcolors.sty",
+		"/Users/mebner/UCL/UCL/Presentations/templates/UCL-Beamer/beamerthemeucl.sty",
+		"/Users/mebner/UCL/UCL/Presentations/templates/UCL-Beamer/beamerouterthemeucltitlebanner.sty",
+		"/Users/mebner/UCL/UCL/Presentations/templates/UCL-Beamer/beamercolorthemeucl.sty",
+		"/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/beamerbaseboxes.sty",
+		"/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/beamerbaseauxtemplates.sty",
+		"/Users/mebner/UCL/UCL/Presentations/templates/UCL-Beamer/beamerinnerthemeblockrounded.sty",
+		"/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/themes/inner/beamerinnerthemerounded.sty",
+		"/Users/mebner/UCL/UCL/Presentations/templates/UCL-Beamer/uclcolors.sty",
+		"/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/themes/color/beamercolorthemebeaver.sty",
+		"/Users/mebner/UCL/UCL/Presentations/templates/UCL-Beamer/beamerinnerthemeblockborder.sty",
+		"/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/themes/inner/beamerinnerthemedefault.sty",
+		"/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/themes/inner/beamerinnerthemeinmargin.sty",
+		"/Users/mebner/UCL/UCL/Presentations/templates/UCL-Beamer/beamerinnerthemeroundedborder.sty",
+		"/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/themes/theme/beamerthemeWarsaw.sty",
+		"/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/themes/color/beamercolorthemedefault.sty",
+		"/Users/mebner/UCL/UCL/Presentations/templates/test/ucl-beamer/sample.tex",
+		"/Users/mebner/UCL/UCL/Presentations/given presentations/Journal Clubs/Journal Club IGI_20160210/LaTeX/Paper.tex",
+		"/Users/mebner/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/mebner/Library/Application Support/Sublime Text 2/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/mebner/UCL/UCL/Presentations/templates/ucl-beamer_git/sample.tex",
+		"/Users/mebner/UCL/UCL/Presentations/templates/UCL/sample.tex",
+		"/Users/mebner/UCL/UCL/Presentations/templates/ucl-beamer_git/beamerinnerthemeblockborder.sty",
+		"/Users/mebner/UCL/UCL/Presentations/templates/ucl-beamer_git/beamerthemeucl.sty",
+		"/Users/mebner/UCL/UCL/Presentations/templates/ucl-beamer_git/beamerouterthemeucltitlebanner.sty",
+		"/Users/mebner/UCL/UCL/Presentations/templates/ucl-beamer_git/beamercolorthemeucl.sty",
+		"/Users/mebner/UCL/UCL/Presentations/templates/ucl-beamer_git copy/sample.tex",
+		"/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/themes/color/beamercolorthemerose.sty",
+		"/Users/mebner/UCL/UCL/Presentations/given presentations/templates/ucl-beamer_git/sample.tex",
+		"/Users/mebner/UCL/UCL/Presentations/given presentations/templates/ucl-beamer_test/ucltemplate.sty",
+		"/Users/mebner/UCL/UCL/Presentations/given presentations/templates/ucl-beamer_git/beamercolorthemeucl.sty",
+		"/Users/mebner/UCL/UCL/Presentations/given presentations/templates/ucl-beamer_git/beamerinnerthemeblockborder.sty",
+		"/Users/mebner/UCL/UCL/Presentations/given presentations/templates/ucl-beamer_git/beamerthemeucl.sty",
+		"/Users/mebner/UCL/UCL/Presentations/given presentations/templates/ucl-beamer_git/uclcolors.sty",
+		"/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/beamerbaseframe.sty",
+		"/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/themes/outer/beamerouterthemeshadow.sty",
+		"/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/themes/inner/beamerinnerthemecircles.sty",
+		"/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/themes/font/beamerfontthemedefault.sty",
+		"/Users/mebner/UCL/UCL/Presentations/given presentations/templates/latex_dark_background/sample.tex",
+		"/Users/mebner/Documents/TU Wien/Diplomarbeit_AIT/SNE-Artikel/Groundwater Pollution (Summerschool)/Presentation/slides.tex",
+		"/Users/mebner/UCL/UCL/Courses/Inverse Problems in Imaging/LectureExamples/Miller.m",
+		"/Users/mebner/UCL/UCL/Courses/Inverse Problems in Imaging/Courseworks/cw01/cw01_run.m",
+		"/Users/mebner/UCL/UCL/Courses/Inverse Problems in Imaging/Courseworks/cw01/getAnisotropicDerivativeFilter.m",
+		"/Users/mebner/UCL/UCL/Courses/Inverse Problems in Imaging/Courseworks/cw01/getDD.m",
+		"/Users/mebner/UCL/UCL/Courses/Inverse Problems in Imaging/LectureExamples/runGradLinBlur.m",
+		"/Users/mebner/UCL/UCL/Courses/Inverse Problems in Imaging/LectureExamples/SD1.m",
+		"/Users/mebner/UCL/UCL/Volumetric Reconstruction/GettingStarted/data/2D_Man_1024.tiff",
+		"/Users/mebner/Downloads/phantom3d/phantom3d.m",
+		"/Users/mebner/UCL/UCL/Volumetric Reconstruction/matlab/generateSheppLoganPhantom3D.m",
+		"/Users/mebner/UCL/UCL/Courses/Inverse Problems in Imaging/Courseworks/cw01/getLHSAugmentedLinearEquationTK0.m",
+		"/Users/mebner/UCL/UCL/Courses/Inverse Problems in Imaging/Courseworks/cw01/ATA.m",
+		"/Users/mebner/UCL/UCL/Courses/Inverse Problems in Imaging/Courseworks/cw01/getBlurredNoisyImage.m",
+		"/Users/mebner/UCL/UCL/Courses/Inverse Problems in Imaging/LectureExamples/ToyDeblur2D.m",
+		"/Users/mebner/UCL/UCL/Courses/Inverse Problems in Imaging/Courseworks/cw01/getKernel2D.m",
+		"/Users/mebner/UCL/UCL/Volumetric Reconstruction/GettingStarted/Optimization.py",
+		"/Users/mebner/UCL/UCL/Volumetric Reconstruction/GettingStarted/ITK_BlurringOperator_Adjoint.py",
+		"/Users/mebner/development/ITK/ITK/Modules/Core/Common/include/itkImageToImageFilter.hxx",
+		"/Users/mebner/development/ITK/ITK/Modules/Core/Common/include/itkImageToImageFilter.h",
+		"/Users/mebner/development/ITK/ITK/Modules/Core/Common/include/itkProcessObject.h",
+		"/Users/mebner/UCL/UCL/Volumetric Reconstruction/GettingStarted/cpp/MyAdjointOrientedGaussian/include/MyITKImageHelper.tpp",
+		"/Users/mebner/development/ITK/runCmake.sh",
+		"/Users/mebner/UCL/UCL/Volumetric Reconstruction/GettingStarted/cpp/MyAdjointOrientedGaussian/CMakeLists.txt",
+		"/Users/mebner/development/ITK/ITK/Documentation/Migration/ImageToImageFilterVerifyInputs.xml",
+		"/Users/mebner/UCL/UCL/Volumetric Reconstruction/GettingStarted/cpp/MyAdjointOrientedGaussian/test/adjointOrientedGaussianInterpolateImageFilter_UnitTests.cpp",
+		"/Users/mebner/development/ITK/ITK/Modules/Core/ImageFunction/include/itkOrientedGaussianInterpolateImageFunction.h",
+		"/Users/mebner/development/ITK/ITK/Modules/Remote/SmoothingRecursiveYvvGaussianFilter/include/itkRecursiveLineYvvGaussianImageFilter.h",
+		"/Users/mebner/development/ITK/ITK/Modules/Filtering/ImageGrid/include/itkResampleImageFilter.hxx",
+		"/Users/mebner/development/ITK/ITK/Modules/Remote/SmoothingRecursiveYvvGaussianFilter/include/itkRecursiveLineYvvGaussianImageFilter.hxx",
+		"/Users/mebner/development/ITK/ITK/Modules/Filtering/ImageGrid/include/itkResampleImageFilter.h",
+		"/Users/mebner/UCL/UCL/Volumetric Reconstruction/GettingStarted/cpp/MyAdjointOrientedGaussian/source/CMakeLists.txt",
+		"/Users/mebner/UCL/UCL/Volumetric Reconstruction/GettingStarted/cpp/MyAdjointOrientedGaussian/build/CMakeCache.txt",
+		"/Users/mebner/UCL/UCL/Volumetric Reconstruction/GettingStarted/cpp/MyAdjointOrientedGaussian/build/foo.txt",
+		"/Users/mebner/UCL/UCL/Volumetric Reconstruction/GettingStarted/cpp/MyAdjointOrientedGaussian/build/toto.txt",
+		"/Users/mebner/UCL/UCL/Volumetric Reconstruction/src/SimpleITKHelper.py",
+		"/Users/mebner/development/NiftyMIDAS/NiftyMIDAS-build/NiftySim-src/source/tledHelper.h",
+		"/Users/mebner/UCL/UCL/Volumetric Reconstruction/GettingStarted/cpp/ITK-Examples/DoDataParallelThreading/main.cpp",
+		"/Users/mebner/UCL/UCL/Volumetric Reconstruction/GettingStarted/cpp/ITK-Examples/DoDataParallelThreading/CMakeLists.txt",
+		"/Users/mebner/development/NiftyMIDAS/NiftyMIDAS/README.txt",
+		"/Users/mebner/development/NiftyMIDAS/runCmake.sh",
+		"/Users/mebner/development/ITK/ITK/Modules/Core/ImageFunction/include/itkOrientedGaussianInterpolateImageFunction.hxx",
+		"/Users/mebner/UCL/UCL/Courses/Research Computing with C++/courseworks/02_Conways Game of Life/source/main.cc",
+		"/Users/mebner/UCL/UCL/Volumetric Reconstruction/GettingStarted/ITK_BlurringOperator.py",
+		"/Users/mebner/UCL/UCL/Volumetric Reconstruction/GettingStarted/cpp/MyAdjointOrientedGaussian/include/MyITKImageHelper.h",
+		"/Users/mebner/development/NiftyMIDAS/NiftyMIDAS/CMake/niftkMacroBuildCLI.cmake",
+		"/Users/mebner/.zshrc",
+		"/Users/mebner/development/Qt5/README",
+		"/Users/mebner/development/NiftyMIDAS/NiftyMIDAS-build/out.txt",
+		"/Users/mebner/development/NiftyMIDAS/NiftyMIDAS/CMakeLists.txt",
+		"/Users/mebner/UCL/UCL/Volumetric Reconstruction/GettingStarted/cpp/MyAdjointOrientedGaussian/build/out.txt",
+		"/Users/mebner/UCL/UCL/Volumetric Reconstruction/GettingStarted/cpp/ITK-FilterExamples_MariaZuluaga/itkHessian3DToOrientationSimilarityMetricFilter.h",
+		"/Users/mebner/UCL/UCL/Volumetric Reconstruction/GettingStarted/cpp/ITK-FilterExamples_MariaZuluaga/itkBrainMaskFromCTFilter.txx",
+		"/Users/mebner/UCL/UCL/Volumetric Reconstruction/GettingStarted/cpp/ITK-FilterExamples_MariaZuluaga/itkHessian3DToOrientationSimilarityMetricFilter.txx",
+		"/Users/mebner/UCL/UCL/Volumetric Reconstruction/GettingStarted/cpp/ITK_Examples/MyFunctions/ResampleImageFilter.cxx",
+		"/Users/mebner/UCL/UCL/Volumetric Reconstruction/GettingStarted/cpp/ITK_Examples/MyFunctions/include/ImageFactory.h",
+		"/Users/mebner/development/ITK/ITK/Modules/Filtering/ImageGrid/wrapping/itkResampleImageFilter.wrap",
+		"/Users/mebner/UCL/UCL/Volumetric Reconstruction/GettingStarted/cpp/ITK_Examples/MyFunctions/test/adjointOrientedGaussianInterpolateImageFilter_UnitTests.cpp",
+		"/Users/mebner/UCL/UCL/Volumetric Reconstruction/GettingStarted/cpp/ITK_Examples/MyFunctions/include/MyITKImageHelper.h",
+		"/Users/mebner/UCL/UCL/Volumetric Reconstruction/GettingStarted/cpp/ITK_Examples/MyFunctions/source/MyITKImageHelper.cpp",
+		"/Users/mebner/development/ITK/ITK/Modules/Core/ImageFunction/wrapping/itkOrientedGaussianInterpolateImageFunction.wrap",
+		"/Users/mebner/UCL/UCL/Volumetric Reconstruction/GettingStarted/cpp/ITK_Examples/MyFunctions/source/adjointOrientedGaussianInterpolateImageFilter.cpp",
+		"/Users/mebner/UCL/UCL/Volumetric Reconstruction/GettingStarted/cpp/MyOrientedGaussian/source/CMakeLists.txt",
+		"/Users/mebner/UCL/UCL/Volumetric Reconstruction/GettingStarted/cpp/MyOrientedGaussian/CMakeLists.txt",
+		"/Users/mebner/UCL/UCL/Volumetric Reconstruction/GettingStarted/cpp/MyOrientedGaussian/source/resampleImageFilter.cpp",
+		"/Users/mebner/development/valgrind-3.11.0/README.aarch64",
+		"/Users/mebner/UCL/UCL/Volumetric Reconstruction/GettingStarted/cpp/ITK_Examples/MyFunctions/CMakeLists.txt",
+		"/Users/mebner/UCL/UCL/Volumetric Reconstruction/GettingStarted/cpp/ITK_Examples/MyFunctions/source/CMakeLists.txt",
+		"/Users/mebner/UCL/UCL/Volumetric Reconstruction/GettingStarted/cpp/ITK_Examples/MyFunctions/include/MyITKImageHelper.tpp",
+		"/Users/mebner/UCL/UCL/Courses/Research Computing with C++/courseworks/02_Conways Game of Life/test/main_UnitTests.cc",
+		"/Users/mebner/UCL/UCL/Volumetric Reconstruction/GettingStarted/cpp/ITK_Examples/MyFunctions/test/CMakeLists.txt",
+		"/Users/mebner/UCL/UCL/Courses/Research Computing with C++/courseworks/02_Conways Game of Life/CMakeLists.txt",
+		"/Users/mebner/UCL/UCL/Volumetric Reconstruction/GettingStarted/cpp/ITK_Examples/MyFunctions/include/MyTemplateClassExample.tpp",
+		"/Users/mebner/development/ITK/ITK/Modules/Filtering/ImageGrid/wrapping/itkAdjointOrientedGaussianInterpolateImageFilter.wrap",
+		"/Users/mebner/UCL/UCL/Volumetric Reconstruction/GettingStarted/cpp/ITK_Examples/MyFunctions/source/ImageFactory_old.cpp",
+		"/Users/mebner/UCL/UCL/Volumetric Reconstruction/GettingStarted/cpp/ITK_Examples/MyFunctions/source/ImageFactory.cpp",
+		"/Users/mebner/UCL/UCL/Volumetric Reconstruction/GettingStarted/cpp/ITK_Examples/MyFunctions/include/ImageFactory.cpp",
+		"/Users/mebner/UCL/UCL/Volumetric Reconstruction/GettingStarted/cpp/ITK_Examples/MyFunctions/include/MyITKImageHelper.cpp",
+		"/usr/local/fsl/bin/fslhd",
+		"/Users/mebner/UCL/UCL/Volumetric Reconstruction/GettingStarted/cpp/ITK_Examples/MyFunctions/source/resampleImageFilter.cpp",
+		"/Users/mebner/UCL/UCL/Volumetric Reconstruction/GettingStarted/cpp/ITK_Examples/MyFunctions/source/itkImageHelper.cpp",
+		"/Users/mebner/UCL/UCL/Volumetric Reconstruction/GettingStarted/cpp/ITK_Examples/MyFunctions/include/itkImageHelper.h",
+		"/Users/mebner/UCL/UCL/Volumetric Reconstruction/GettingStarted/cpp/ITK_Examples/MyFunctions/source/ImageHelper.cpp",
+		"/Users/mebner/UCL/UCL/Volumetric Reconstruction/GettingStarted/cpp/ITK_Examples/MyFunctions/include/ImageHelper.h",
+		"/Users/mebner/UCL/UCL/Volumetric Reconstruction/GettingStarted/cpp/ITK_Examples/MyFunctions/include/Image.h"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"*.sty",
+			"",
+			"*box*",
+			"*blocks*",
+			"*block*",
+			"",
+			"*cmake",
+			"*wrap",
+			"*txt",
+			"",
+			"*h",
+			"*py",
+			"",
+			"*Lists.txt",
+			"*txt",
+			"",
+			"out.txt",
+			"*.txt",
+			"",
+			"*Lists.txt",
+			"*.txt",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"single section theme",
+			"insertsectionnavigationhorizontal",
+			"minifra",
+			"mini",
+			"0.6",
+			"section in head/foot",
+			"single theme",
+			"split",
+			"navig",
+			"navigatio",
+			"logo",
+			"setbeamertemplate",
+			"logos",
+			"\n",
+			"pgfdeclareverticalshading",
+			"pgf*shad",
+			"pgf",
+			"pgfvertical",
+			"pgfverticalshading",
+			"normal tex",
+			"background canvas",
+			"canvas",
+			"miniframe",
+			"alertblock",
+			"fonttheme",
+			"margin",
+			"example",
+			"green",
+			"block",
+			"alerted",
+			"1.23",
+			"-1.9",
+			"-3.5",
+			"-1.4",
+			"-0.2",
+			"-2.7",
+			"block body",
+			"block title",
+			"block begin",
+			"block",
+			"myrounded=true",
+			"rounded",
+			"bordered",
+			"beamercolorbox",
+			"beamercolor",
+			"beamercolorbox",
+			"transition",
+			"{\n",
+			"bmb@transition",
+			"pgfdeclareverticalshading",
+			"lower",
+			"blocks",
+			"shado",
+			"alerted text",
+			"alert text",
+			"beaver",
+			"warsaw",
+			"alerted text",
+			"setbeamercolor{block",
+			"setbeamercolor",
+			"alert",
+			"brightblue",
+			"shad",
+			"upper",
+			"lower.bg!80!",
+			"80",
+			"round",
+			"pgfdeclareverticalshading",
+			"round",
+			"pgfdeclareverticalshading",
+			"pgf",
+			"rounded",
+			"{rounded}",
+			"defbeamertemplate*{block begin}{rounded}",
+			"rounded",
+			"bordered",
+			"xcolor",
+			"structure",
+			"setbeamercolor",
+			"\\pgfdeclareverticalshading[lower.bg,upper.bg]",
+			"structure",
+			"60",
+			"red",
+			"lower.bg",
+			"bordered",
+			"setbeamertemplate{block",
+			"block",
+			"bg",
+			"setbeamerfont{block",
+			"setbeamerfont",
+			"beamerfont",
+			"defbeamertemplate*{block",
+			"block title",
+			"defbeamertemplate*{block",
+			"defbeamertemplate*{",
+			"defbeamertemplate*{block begin}{bordered}",
+			"black",
+			"frametitle",
+			"reduce",
+			"margin",
+			"crop",
+			"frametitle",
+			"80",
+			"7",
+			"section in head/foot",
+			"department",
+			"beamerfont",
+			"beamercolorbox",
+			"ifbeamercolorempty",
+			"split theme",
+			"footline",
+			"333333",
+			".5",
+			"333333",
+			"footline",
+			"structure",
+			"useinnertheme",
+			"block",
+			"rounded",
+			"setbeamertemplate{blocks}",
+			"navyblue",
+			"darkblue",
+			"navyblue",
+			"lower",
+			"upper",
+			"separation rule",
+			"palette primary",
+			"footline"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"ComponentType",
+			"InputImageRegionType",
+			"SliceStack",
+			"",
+			"mebner",
+			"${mask1}",
+			"${mask3}",
+			"${mask2}",
+			"${mask3}",
+			"${mask2}",
+			"mask01",
+			"${ana3}",
+			"${ana2}",
+			"${ana1}",
+			"SurfaceBased",
+			"dFRE",
+			"FRE",
+			"dFRE",
+			"PointBasedTrafo2",
+			"computeRegistration",
+			"mx",
+			"**",
+			"SurfaceBasedTrafo",
+			"mx",
+			"dMSE",
+			"SurfaceBasedTrafo"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": false,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "sample.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11494,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								852,
+								852
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "UCL-Beamer/uclcolors.sty",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1181,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								37,
+								37
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "UCL-Beamer/beamercolorthemeucl.sty",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3145,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2531,
+								2551
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 363.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "UCL-Beamer/beamerthemeuclposter.sty",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1032,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "UCL-Beamer/beamerouterthemeucltitlebanner.sty",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3051,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								202,
+								202
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "UCL-Beamer/beamerthemeucl.sty",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10043,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								10043
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 30.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 289.0
+	},
+	"output.find_results":
+	{
+		"height": 246.0
+	},
+	"output.latextools":
+	{
+		"height": 227.0
+	},
+	"pinned_build_system": "Packages/LaTeXTools/LaTeX.sublime-build",
+	"project": "UCL-Beamer.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"beamerinnerthemedefault",
+				"beamer/themes/inner/beamerinnerthemedefault.sty"
+			],
+			[
+				"colo",
+				"UCL-Beamer/uclcolors.sty"
+			],
+			[
+				"theme",
+				"UCL-Beamer/beamerthemeucl.sty"
+			],
+			[
+				"beamerinnertheme",
+				"beamer/themes/inner/beamerinnerthemerounded.sty"
+			],
+			[
+				"beamerinner",
+				"beamer/themes/inner/beamerinnerthemerounded.sty"
+			],
+			[
+				"war",
+				"themes/theme/beamerthemeWarsaw.sty"
+			],
+			[
+				"gibe",
+				"Inverse Problems in Imaging/LectureExamples/Gibbsex2.m"
+			],
+			[
+				"posterior",
+				"Inverse Problems in Imaging/LectureExamples/PosteriorMH.m"
+			],
+			[
+				"mixgaus",
+				"Inverse Problems in Imaging/LectureExamples/MixGaussMH.m"
+			],
+			[
+				"mhex",
+				"Inverse Problems in Imaging/LectureExamples/MHex2.m"
+			],
+			[
+				"mhf",
+				"Inverse Problems in Imaging/LectureExamples/MHfunc.m"
+			],
+			[
+				"getan",
+				"Inverse Problems in Imaging/Courseworks/cw01/getAnisotropicDerivativeFilter.m"
+			],
+			[
+				"getdd",
+				"Inverse Problems in Imaging/Courseworks/cw01/getDD.m"
+			],
+			[
+				"",
+				"Inverse Problems in Imaging/Courseworks/cw01/cw01_run.m"
+			],
+			[
+				"rungrad",
+				"Inverse Problems in Imaging/LectureExamples/runGradLinBlur.m"
+			],
+			[
+				"sd1m",
+				"Inverse Problems in Imaging/LectureExamples/SD1.m"
+			],
+			[
+				"sd1",
+				"GettingStarted/data/2D_Man_1024.tiff"
+			],
+			[
+				"binary",
+				"Inverse Problems in Imaging/Courseworks/cw01/binarySearch.m"
+			],
+			[
+				"dp.m",
+				"Inverse Problems in Imaging/LectureExamples/DP.m"
+			],
+			[
+				"miller",
+				"Inverse Problems in Imaging/LectureExamples/Miller.m"
+			],
+			[
+				"augm",
+				"Inverse Problems in Imaging/Courseworks/cw01/getLHSAugmentedLinearEquationTK0.m"
+			],
+			[
+				"ata",
+				"Inverse Problems in Imaging/Courseworks/cw01/ATA.m"
+			],
+			[
+				"test_ad",
+				"Inverse Problems in Imaging/Courseworks/cw01/test_adjoint.m"
+			],
+			[
+				"getbl",
+				"Inverse Problems in Imaging/Courseworks/cw01/getBlurredNoisyImage.m"
+			],
+			[
+				"getk",
+				"Inverse Problems in Imaging/Courseworks/cw01/getKernel2D.m"
+			],
+			[
+				"blurrin",
+				"GettingStarted/SimpleITK_Blurring.py"
+			],
+			[
+				"run",
+				"Inverse Problems in Imaging/Courseworks/cw01/cw01_run.m"
+			],
+			[
+				"o",
+				"Optimization.py"
+			],
+			[
+				"itkmultithreader",
+				"Modules/Core/Common/src/itkMultiThreader.cxx"
+			],
+			[
+				"multithread",
+				"Modules/Core/Common/include/itkMultiThreader.h"
+			],
+			[
+				"imagetoimagefilt",
+				"Modules/Core/Common/include/itkImageToImageFilter.hxx"
+			],
+			[
+				"imagetoimagefil",
+				"Modules/Core/Common/include/itkImageToImageFilter.h"
+			],
+			[
+				"imagetoimage",
+				"Documentation/Migration/ImageToImageFilterVerifyInputs.xml"
+			],
+			[
+				"processobject",
+				"Modules/Core/Common/include/itkProcessObject.h"
+			],
+			[
+				"resampleimagefilter.h",
+				"Modules/Filtering/ImageGrid/include/itkResampleImageFilter.h"
+			],
+			[
+				"resampleimagefilter.hx",
+				"Modules/Filtering/ImageGrid/include/itkResampleImageFilter.hxx"
+			],
+			[
+				"orientedgaussian",
+				"Modules/Core/ImageFunction/include/itkOrientedGaussianInterpolateImageFunction.h"
+			],
+			[
+				"imagesource",
+				"Modules/Core/Common/include/itkImageSource.hxx"
+			],
+			[
+				"resampleimagefilterhx",
+				"Modules/Filtering/ImageGrid/include/itkResampleImageFilter.hxx"
+			],
+			[
+				"wrapitk",
+				"Wrapping/WrapITKTypes.cmake"
+			],
+			[
+				"orientedgauss",
+				"Modules/Core/ImageFunction/wrapping/itkOrientedGaussianInterpolateImageFunction.wrap"
+			],
+			[
+				"adjointoriented",
+				"Modules/Filtering/ImageGrid/wrapping/itkAdjointOrientedGaussianInterpolateImageFilter.wrap"
+			],
+			[
+				"itkorientedimage",
+				"Modules/Core/ImageFunction/include/itkOrientedGaussianInterpolateImageFunction.h"
+			],
+			[
+				"itkorientedgau",
+				"Modules/Core/ImageFunction/include/itkOrientedGaussianInterpolateImageFunction.hxx"
+			],
+			[
+				"resampl",
+				"Examples/Filtering/ResampleImageFilter.cxx"
+			],
+			[
+				"itkresamp",
+				"Modules/Filtering/ImageGrid/include/itkResampleImageFilter.h"
+			],
+			[
+				"imagetoima",
+				"Modules/Core/Common/include/itkImageToImageFilter.h"
+			],
+			[
+				"warpvec",
+				"Modules/Filtering/ImageGrid/include/itkWarpVectorImageFilter.h"
+			],
+			[
+				"orientedg",
+				"Modules/Core/ImageFunction/include/itkOrientedGaussianInterpolateImageFunction.h"
+			],
+			[
+				"resampleimagefilter",
+				"Modules/Filtering/ImageGrid/include/itkResampleImageFilter.h"
+			],
+			[
+				"edit",
+				"Modules/Core/ImageFunction/include/itkGaussianInterpolateImageFunction_edit.hxx"
+			],
+			[
+				"oriented",
+				"Modules/Core/ImageFunction/include/itkOrientedGaussianInterpolateImageFunction.hxx"
+			],
+			[
+				"h.kw",
+				"Modules/Core/ImageFunction/include/itkOrientedGaussianInterpolateImageFunction.h.kws"
+			],
+			[
+				"h.kws",
+				"Modules/Core/ImageFunction/include/itkOrientedGaussianInterpolateImageFunction.h.kws"
+			],
+			[
+				"fixeda",
+				"Modules/Core/Common/include/itkFixedArray.h"
+			],
+			[
+				"itkma",
+				"Modules/Core/Common/include/itkMacro.h"
+			],
+			[
+				"orientedgau",
+				"Modules/Core/ImageFunction/include/itkOrientedGaussianInterpolateImageFunction.h"
+			],
+			[
+				"gaussianinterpol",
+				"Modules/Core/ImageFunction/include/itkGaussianInterpolateImageFunction.h"
+			],
+			[
+				"orientedgas",
+				"Modules/Core/ImageFunction/include/itkOrientedGaussianInterpolateImageFunction.h"
+			],
+			[
+				"fullco",
+				"Modules/Core/ImageFunction/include/itkGaussianInterpolateImageFunctionFullCovariance.h"
+			],
+			[
+				"gauss3",
+				"Modules/Core/ImageFunction/include/itkGaussianInterpolateImageFunction3D.h"
+			],
+			[
+				"itkgau",
+				"Modules/Core/ImageFunction/include/itkGaussianInterpolateImageFunction.h"
+			],
+			[
+				"itkgaussianinerpola",
+				"Modules/Core/ImageFunction/include/itkGaussianInterpolateImageFunction.hxx"
+			],
+			[
+				"itkgaussianinterpolateimagefunction",
+				"Modules/Core/ImageFunction/include/itkGaussianInterpolateImageFunction.h"
+			],
+			[
+				"functionba",
+				"Modules/Core/Common/include/itkFunctionBase.h"
+			],
+			[
+				"imagefun",
+				"Modules/Core/ImageFunction/include/itkImageFunction.h"
+			],
+			[
+				"interpolateima",
+				"Modules/Core/ImageFunction/include/itkInterpolateImageFunction.h"
+			],
+			[
+				"itknearestneighborinterpolateimagefunction",
+				"Modules/Core/ImageFunction/include/itkNearestNeighborInterpolateImageFunction.h"
+			],
+			[
+				"irtktemporalhomogeneoustransformation.cc",
+				"fetalReconstruction/source/IRTKSimple2/packages/transformation/src/irtkTemporalHomogeneousTransformation.cc"
+			],
+			[
+				"irtkmatrix.h",
+				"fetalReconstruction/source/IRTKSimple2/geometry++/include/irtkMatrix.h"
+			],
+			[
+				"irtkmatri",
+				"fetalReconstruction/source/IRTKSimple2/geometry++/include/irtkMatrix.h"
+			],
+			[
+				"irtkm",
+				"fetalReconstruction/source/IRTKSimple2/geometry++/include/irtkMatrix.h"
+			],
+			[
+				"irtkmat",
+				"fetalReconstruction/source/IRTKSimple2/geometry++/include/irtkMatrix.h"
+			],
+			[
+				"irtktemporalhomogeneoustransformation",
+				"fetalReconstruction/source/IRTKSimple2/packages/transformation/src/irtkTemporalHomogeneousTransformation.cc"
+			],
+			[
+				"irtkmatr",
+				"fetalReconstruction/source/IRTKSimple2/geometry++/include/irtkMatrix.h"
+			],
+			[
+				"lhomogeneoustransformation.cc",
+				"source/IRTKSimple2/packages/transformation/src/irtkTemporalHomogeneousTransformation.cc"
+			],
+			[
+				"irtkmatrix",
+				"source/IRTKSimple2/geometry++/src/irtkMatrix.cc"
+			],
+			[
+				"pointbasedtrafo",
+				"research-computing-with-cpp-demo/Code/PointBasedReg/PointBasedTrafo.cc"
+			],
+			[
+				"readfil",
+				"research-computing-with-cpp-demo/Code/PointBasedReg/readFileIntoMatrix.cc"
+			],
+			[
+				"pointbasedregcmake",
+				"research-computing-with-cpp-demo/Code/PointBasedReg/CMakeLists.txt"
+			],
+			[
+				"cmake",
+				"PointBasedReg/CMakeLists.txt"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 648.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 314.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

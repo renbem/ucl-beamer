@@ -1,0 +1,268 @@
+
+
+\RequirePackage{flashmovie} %used for \flashmovie
+
+% \documentclass[compress,12pt]{beamer} %Presentation mode
+% \documentclass[compress,12pt,aspectratio=169]{beamer} %Presentation mode
+\documentclass[compress,12pt,handout]{beamer} %Handout mode
+
+% Instead of \usetheme{ucl} use following line now given the subfolder structure
+%** Look at http://tex.stackexchange.com/questions/123700/how-to-use-local-beamer-theme-in-project-source-folder
+% Before: \usetheme{ucl}; Now: \usepackage{UCL-UCL-Beamer/beamerthemeucl}; analog others in this document
+\usepackage{UCL-Beamer/beamerthemeucl}
+
+% \addmediapath{./movies}
+\usepackage{media9}%        %used for \includemedia
+\usepackage{multimedia}     %used for \movie
+\usepackage{animate}        %used for \animategraphics
+% \usepackage[colorlinks]{hyperref}
+% \usepackage{attachfile2}
+
+% \graphicspath{{./figures/}} %Where the figures folder is located
+
+% Define user colors using the RGB model
+\definecolor{dunkelgrau}{rgb}{0.4,0.4,0.4}
+\definecolor{grau}{rgb}{0.6,0.6,0.6}
+\definecolor{hellgrau}{rgb}{0.95,0.95,0.95}
+
+% \definecolor{headlinecolor}{RGB}{130,0,0}
+% \colorlet{headlinecolor}{pink}
+\colorlet{headlinecolor}{brightblue}
+
+\definecolor{orange}{RGB}{233,77,16}
+\definecolor{myBlue}{RGB}{56,32,196}
+\definecolor{myGreen}{RGB}{33,222,60}
+
+\usepackage[latin1]{inputenc}
+\usepackage[english]{babel}
+
+\usepackage{ifthen,amsmath,amssymb,latexsym,color,psfrag}
+\usepackage{fp,tikz}       %fixed point arithmetic for tex, tikz f\"ur Befehl foreach
+
+\usepackage
+    [separate-uncertainty=true,
+    %multi-part-units=single,
+    list-units=repeat,per-mode = symbol]
+    {siunitx}
+%%% Increase the height of the banner: the argument is a scale factor >=1.0
+% \setbeamertemplate{banner}[ucl][1.5]
+
+%%% Change the colour of the main banner
+%%% The background should be one of the UCL colours (except pink or white):
+%%%   black,darkpurple,darkred,darkblue,darkgreen,darkbrown,richred,midred,
+%%%   navyblue,midgreen,darkgrey,orange,brightblue,brightgreen,lightgrey,
+%%%   lightpurple,yellow,lightblue,lightgreen,stone
+% \setbeamercolor{banner}{bg=darkpurple}
+% \setbeamercolor{banner}{bg=brightblue}
+% \setbeamercolor{banner}{bg=yellow,fg=white}
+
+%%% Set a background colour
+% \setbeamercolor{background canvas}{bg=darkgrey}
+
+%%% Change colour of text if desired
+% \setbeamercolor{normal text}{fg=white}\usebeamercolor*{normal text}
+
+%%% Add a stripe behind the banner
+% \setbeamercolor{banner stripe}{bg=pink,fg=white}
+% \setbeamercolor{banner stripe}{bg=stone,fg=white}
+% \setbeamercolor{banner stripe}{bg=pink!30,fg=pink}
+
+%%% The main structural elements
+% \setbeamercolor{structure}{fg=white}
+
+%%% Author/Title/Date and slide number in the footline
+% \setbeamertemplate{footline}[author title date]
+\setbeamertemplate{footline}[title author frame]
+% \setbeamertemplate{footline}[author title frame]
+% \setbeamertemplate{slide counter}[frametotal]
+
+%%% Puts the section/subsection in the headline
+% \setbeamertemplate{headline}[section]
+
+%%% Puts a navigation bar on top of the banner
+%%% For this to work correctly, the each \section command needs to be
+%%% followed by a \subsection. Requires one extra compile.
+% \setbeamertemplate{headline}[miniframes]
+%%% Accepts an optional argument determining the width
+% \setbeamertemplate{headline}[miniframes][\paperwidth]
+
+
+%%% Puts the frame title in the banner
+%%% Won't work correctly with the above headline templates
+% Instead of \useoutertheme{ucltitlebanner} use following line now given the subfolder structure
+% \usepackage{UCL-Beamer/beamerouterthemeucltitlebanner}
+%%% Similar to above, but smaller (and puts subtitle on same line as title)
+% \usepackage[small]{UCL-Beamer/beamerouterthemeucltitlebanner}
+
+% \usepackage[title+headline]{UCL-Beamer/beamerouterthemeucltitlebanner}
+\usepackage[title+sectiononlyheadline]{UCL-Beamer/beamerouterthemeucltitlebanner}
+
+%%% Gives block elements (theorems, examples) a round, shaded border
+\usepackage{UCL-Beamer/beamerinnerthemeblockrounded}
+
+%%% Gives block elements (theorems, examples) a border
+% \usepackage{UCL-Beamer/beamerinnerthemeblockborder}
+%%% Sets the body of block elements to be clear
+% \setbeamercolor{block body}{bg=white,fg=black}
+
+%%% Include logos on title slide
+\titlegraphic{%
+  \includegraphics[height=0.06\paperwidth]{UCL-Beamer/logos/WellcomeTrust}%
+  \hspace{0.3cm}%
+  \includegraphics[height=0.06\paperwidth]{UCL-Beamer/logos/EPSRC}%
+  \hspace{0.3cm}%
+  \includegraphics[height=0.06\paperwidth]{UCL-Beamer/logos/GIFTSurg}%s
+  \hspace{0.3cm}%
+  \includegraphics[height=0.06\paperwidth]{UCL-Beamer/logos/EPSRC_CDT}%
+  \hspace{0.3cm}%
+  \includegraphics[height=0.06\paperwidth]{UCL-Beamer/logos/KULeuven}%
+  }
+
+
+%%% Set a background image
+%%% Some sample images are available from the UCL image store:
+%%%   https://www.imagestore.ucl.ac.uk/home/start
+% \setbeamertemplate{background canvas}{%
+%   \includegraphics[width=\paperwidth]{imagename}}
+
+
+
+%%%%%% Some other settings that can make things look nicer
+%%% Set a smaller indent for description environment
+\setbeamersize{description width=2em}
+
+
+
+\def\headline#1{\begin{frame}[c]\centering\color{headlinecolor}\LARGE\bfseries#1\end{frame}}
+\newcommand{\subheadline}[2]{\begin{frame}\color{headlinecolor}{#1}\begin{center}\color{headlinecolor}\Large\bfseries#2\end{center}\end{frame}}
+\newcommand{\remember}[2][0.5]{{\scriptsize\hfill\color{dunkelgrau}$\displaystyle #2$}\vspace*{#1 cm}}
+
+
+
+\title[Volumetric MRI Reconstruction of Fetal Neck Mass Trachea]{Volumetric MRI Reconstruction of \\Trachea in Fetuses with \\Complex Neck Masses}
+\author[Michael Ebner]
+    {
+      \vspace{-0.2cm}
+        {\scriptsize M~Ebner, M~Aertsen, R~Pratt, AL~David, PP~Pandya, J~Deprest, G~Kendall, M~Klusmann, P~Humphries, R~Hewitt, D~Atkinson, T~Vercauteren, S~Ourselin}%
+    }
+\institute[UCL]{%
+    \vspace{-0.3cm}\\%
+    % Translational Imaging Group, CMIC\\%
+    % University College London
+    Fetal, Neonatal and Paediatric MR Imaging:\\%
+    Techniques and Applications
+    % \vspace{-0.3cm}%
+}
+\date{April 7, 2016}
+
+
+\input{00_Makros}
+
+\setbeamertemplate{navigation symbols}{} %remove navigation symbols
+% \setbeamertemplate{navigation symbols}{%
+% % \insertslidenavigationsymbol
+% \insertframenavigationsymbol
+% % \insertsubsectionnavigationsymbol
+% \insertsectionnavigationsymbol
+% % \insertdocnavigationsymbol
+% \insertbackfindforwardnavigationsymbol
+% }
+
+\begin{document}
+
+{   
+    % \setbeamertemplate{footline}{}
+    \begin{frame}
+      \vspace{-0.6cm}
+      \titlepage
+    \end{frame}
+}
+
+%%% Include logo in bottom right corner of all slides and put navigation symbols to bottom left
+\logo{%
+  \vspace{-2ex}%
+  \makebox[0.95\paperwidth]{%
+    \usebeamercolor[fg]{navigation symbols}%
+    \insertslidenavigationsymbol
+    \insertframenavigationsymbol
+    \insertsectionnavigationsymbol
+    % \insertsubsectionnavigationsymbol
+    % \insertdocnavigationsymbol
+    % \insertbackfindforwardnavigationsymbol
+    \hfill%
+    \includegraphics[width=0.12\paperwidth]{UCL-Beamer/logos/GIFTSurg}
+  }%
+}
+%%% Remove nav symbols (and shift any logo down to corner)
+\setbeamertemplate{navigation symbols}{\hspace{-2ex}} 
+
+\begin{frame}[t]\frametitle{Package: Animate}\centering
+  \animategraphics[autoplay,controls,loop,height=0.4\textheight,buttonsize=0.5em]{2}{movies/image-series/montage_axial_00}{45}{62}    
+  \begin{itemize}
+    \item Works well
+    \item even with controls (adjustable size)
+    \item Reads a series of images instead of a video
+    \item Pdf might get big then
+    \item There is no timebar
+  \end{itemize}
+\end{frame}
+
+\begin{frame}[t]\frametitle{Open video externally via hyperlink}    
+  \begin{center}
+    \href{run:movies/axial_view.mp4}{\includegraphics[scale=0.25]{./movies/axial_view.png}}
+  \end{center}
+  \begin{itemize}
+    \item Opens movie player (e.g. VLC) externally
+    \item Works well but it is not inside the presentation obviously
+    \item However, it seems that the hyperlink represents an absolute path! 
+  \end{itemize}
+\end{frame}
+\begin{frame}[t]\frametitle{Package: media9} 
+  \includemedia[label=myVidPlayer,
+    width=0.5\textwidth,height=0.4\textheight,
+    activate=pageopen,
+    deactivate=pageclose,
+    addresource=movies/axial_view.mp4,
+    playbutton=fancy,
+    transparent,
+    flashvars={source=movies/axial_view.mp4&autoPlay=true&loop=true&autohide=0&showinfo=1}
+  ]{}{VPlayer.swf}
+  \begin{itemize}
+    \item Seems that width and height need to be set (not possible to set only one of them to keep aspect ratio?)
+    \item No pause/play possibility it seems
+    \item No controls
+    \item But can be used to control several videos/media at once with buttons etc
+  \end{itemize}
+\end{frame}
+
+
+\begin{frame}[t]\frametitle{Package: Flashmovie}\centering
+  \flashmovie[width=6cm,height=0.4\textheight,loop=1,engine=flv-player,image=movies/axial_view.png]{movies/axial_view.mp4}
+  \begin{itemize}
+    \item Loop does not to work (even though enabled)
+    \item Seems that width and height need to be set (not possible to set only one of them to keep aspect ratio?)
+    \item Adds extra space around video
+  \end{itemize}
+\end{frame}
+
+
+% Does not work here for whatever reason. But it is not very useful anyway
+% \begin{frame}[t]\frametitle{Package: media15}\centering
+%   \includemovie{6cm}{0.4\textheight}{movies/axial_view.mp4}
+%   \begin{itemize}
+%     \item Superseded by media9
+%     \item No buttons here either
+%   \end{itemize}
+% \end{frame}
+
+% Does not work
+% \begin{frame}{movie}
+%   \begin{figure}[h!]\centering    
+%   \movie[label=show3,width=1.0\textwidth,poster
+%        ,autostart,showcontrols,loop] 
+%   {\includegraphics[width=1.0\textwidth]{movies/axial_view.png}}{movies/axial_view.mp4}
+%   \caption{caption}
+%   \end{figure} 
+% \end{frame}
+
+\end{document}
