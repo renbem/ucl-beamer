@@ -244,6 +244,22 @@
   \vskip0pt%
 }
 
+\defbeamertemplate{footline}{author title}
+{
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.25ex,dp=1ex,right,rightskip=.5em]{author in head/foot}%
+    \usebeamerfont{author in head/foot}\insertshortauthor
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.25ex,dp=1ex,left,leftskip=0.5em,rightskip=.5em]{my title in head/foot}%
+    \usebeamerfont{my title in head/foot}\insertshorttitle
+  \end{beamercolorbox}%
+  % \begin{beamercolorbox}[wd=.0\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+  % \end{beamercolorbox}
+  }%
+  \vskip0pt%
+}
+
 \defbeamertemplate{footline}{title author frame}
 {
   \leavevmode%
@@ -253,6 +269,22 @@
   \end{beamercolorbox}%
   \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.25ex,dp=1ex,left,leftskip=0.9em,rightskip=.5em]{my title in head/foot}%
     \usebeamerfont{my title in head/foot}\insertshortauthor\hfill\insertframenumber
+  \end{beamercolorbox}%
+  % \begin{beamercolorbox}[wd=.0\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+  % \end{beamercolorbox}
+  }%
+  \vskip0pt%
+}
+
+\defbeamertemplate{footline}{title author}
+{
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.25ex,dp=1ex,right,rightskip=.9em]{author in head/foot}%
+    \usebeamerfont{author in head/foot}\insertshorttitle
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.25ex,dp=1ex,left,leftskip=0.9em,rightskip=.5em]{my title in head/foot}%
+    \usebeamerfont{my title in head/foot}\insertshortauthor
   \end{beamercolorbox}%
   % \begin{beamercolorbox}[wd=.0\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
   % \end{beamercolorbox}

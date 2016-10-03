@@ -82,10 +82,10 @@
 % \usepackage[title+headline]{UCL-Beamer/beamerouterthemeucltitlebanner}
 
 %%% Gives block elements (theorems, examples) a round, shaded border
-\usepackage{UCL-Beamer/beamerinnerthemeblockrounded}
+% \usepackage{UCL-Beamer/beamerinnerthemeblockrounded}
 
 %%% Gives block elements (theorems, examples) a round, but non-shaded, border
-% \usepackage{UCL-Beamer/beamerinnerthemeblockroundedwithoutshadow}
+\usepackage{UCL-Beamer/beamerinnerthemeblockroundedwithoutshadow}
 
 %%% Gives block elements (theorems, examples) a border
 % \usepackage{UCL-Beamer/beamerinnerthemeblockborder}
@@ -118,11 +118,10 @@
 % \setbeamertemplate{navigation symbols}{}
 
 
-%%% Create headline slide without framenumber
-\def\headline#1{\setbeamertemplate{footline}[title author] \begin{frame}[c,noframenumbering]\centering\color{headlinecolor}\LARGE\bfseries#1\end{frame} \setbeamertemplate{footline}[title author frame]}
+\def\headline#1{\begin{frame}[c]\centering\color{headlinecolor}\LARGE\bfseries#1\end{frame}}
 \newcommand{\subheadline}[2]{\begin{frame}\color{headlinecolor}{#1}\begin{center}\color{headlinecolor}\Large\bfseries#2\end{center}\end{frame}}
-\newcommand{\remember}[2][0.5]{{\scriptsize\hfill$\displaystyle #2$}\vspace*{#1 cm}}
-% \newcommand{\remember}[2][0.5]{{\scriptsize\hfill\color{dunkelgrau}$\displaystyle #2$}\vspace*{#1 cm}}
+\newcommand{\remember}[2][0.5]{{\scriptsize\hfill\color{dunkelgrau}$\displaystyle #2$}\vspace*{#1 cm}}
+
 
 
 \title[Short Title]{Title of the Presentation}
@@ -137,12 +136,22 @@
 \input{00_Makros}
 
 
-
 \begin{document}
+
+%%% Change to black background with white foreground text color
+\usebackgroundtemplate%
+{%
+    \includegraphics[width=\paperwidth,height=\paperheight]{UCL-Beamer/backgrounds/background_black}%
+}
+\setbeamercolor{normal text}{fg=white}\usebeamercolor*{normal text}
 
 
 \begin{frame}
-  \titlepage
+    %%% Change title page to have non-shaded background and offset it for correct alignment
+    \vspace*{1cm}
+    \setbeamertemplate{title page}[default][rounded=true,shadow=false]
+
+    \titlepage
 \end{frame}
 
 %%% Include logo in bottom right corner of all slides
