@@ -119,8 +119,16 @@
 
 
 %%% Create headline slide without framenumber
-\def\headline#1{\setbeamertemplate{footline}[title author] \begin{frame}[c,noframenumbering]\centering\color{headlinecolor}\LARGE\bfseries#1\end{frame} \setbeamertemplate{footline}[title author frame]}
-\newcommand{\subheadline}[2]{\begin{frame}\color{headlinecolor}{#1}\begin{center}\color{headlinecolor}\Large\bfseries#2\end{center}\end{frame}}
+%%% Create headline slide without framenumber
+\def\headline#1{
+  \setbeamertemplate{footline}[title author]
+  \begin{frame}[c]\centering\color{headlinecolor}\LARGE\bfseries#1\end{frame}
+  \setbeamertemplate{footline}[title author frame]
+  \addtocounter{framenumber}{-1} %could also use noframenumbering above but it does not show the section header in the first "headline" slide for whatever reason. This solution works.
+}
+\newcommand{\subheadline}[2]{
+  \begin{frame}\color{headlinecolor}{#1}\begin{center}\color{headlinecolor}\Large\bfseries#2\end{center}\end{frame}
+}
 \newcommand{\remember}[2][0.5]{{\scriptsize\hfill$\displaystyle #2$}\vspace*{#1 cm}}
 % \newcommand{\remember}[2][0.5]{{\scriptsize\hfill\color{dunkelgrau}$\displaystyle #2$}\vspace*{#1 cm}}
 
